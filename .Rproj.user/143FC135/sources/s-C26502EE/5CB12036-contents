@@ -1,0 +1,257 @@
+## Stratification Basics
+
+set.seed(2022)
+#--- simple random sampling ---#
+existing <- sample_srs(raster = mr, nSamp = 50, plot = TRUE)
+
+samples <- sample_ahels(mraster = mr$zq90,
+                        existing = existing,
+                        nSamp = 50,
+                        details = TRUE)
+
+Currently 5 stratification algorithms. I'll use `strat_quantiles()` in an example
+
+![](images/stratify-01.png){fig-align="center"}
+
+##  {auto-animate="true"}
+
+First we need to load in our ALS metrics
+
+``` r
+#--- Load raster and access files ---#
+r <- system.file("extdata", "mraster.tif", package = "sgsR")
+mr <- terra::rast(r)
+```
+
+```{r}
+r <- system.file("extdata", "mraster.tif", package = "sgsR")
+mr <- terra::rast(r)
+terra::plot(mr$zq90, main = "90th percentile of height")
+```
+
+##  {auto-animate="true"}
+
+Quantiles stratification using basic functionality.
+
+``` {.r code-line-numbers="5-9"}
+#--- Load metrics raster ---#
+r <- system.file("extdata", "mraster.tif", package = "sgsR")
+mr <- terra::rast(r)
+
+#--- perform quantile stratification of 90th percentile height ---#
+sraster <- strat_quantiles(
+  mraster = mr$zq90, # input ALS metric - 90th percentile of height
+  nStrata = 5 # desired number of strata
+)
+```
+
+##  {auto-animate="true"}
+
+Some parameters are mandatory.
+
+``` {.r code-line-numbers="7-8"}
+#--- Load metrics raster ---#
+r <- system.file("extdata", "mraster.tif", package = "sgsR")
+mr <- terra::rast(r)
+
+#--- perform quantile stratification of 90th percentile height ---#
+sraster <- strat_quantiles(
+  mraster = mr$zq90, # input ALS metric - 90th percentile of height
+  nStrata = 5 # desired number of strata
+)
+```
+
+##  {auto-animate="true"}
+
+While others are optional.
+
+``` {.r code-line-numbers="9-10"}
+#--- Load metrics raster ---#
+r <- system.file("extdata", "mraster.tif", package = "sgsR")
+mr <- terra::rast(r)
+
+#--- perform quantile stratification of 90th percentile height ---#
+sraster <- strat_quantiles(
+  mraster = mr,
+  nStrata = 5, # number of desired strata
+  plot = TRUE, # plot output
+  details = TRUE # specify if additional information should be given
+)
+```
+
+##  {auto-animate="true"}
+
+While others are optional.
+
+``` {.r code-line-numbers="11-12"}
+#--- Load metrics raster ---#
+r <- system.file("extdata", "mraster.tif", package = "sgsR")
+mr <- terra::rast(r)
+
+#--- perform quantile stratification of 90th percentile height ---#
+sraster <- strat_quantiles(
+  mraster = mr,
+  nStrata = 5, # number of desired strata
+  plot = TRUE, # plot output
+  details = TRUE # specify if additional information should be given
+  filename = tempfile(fileext = ".tif"), # write file to disk
+  overwrite = TRUE # overwrite file if it exists
+)
+```
+
+## Stratification output
+
+```{r}
+#| layout-ncol: 2
+
+r <- system.file("extdata", "mraster.tif", package = "sgsR")
+mr <- terra::rast(r)
+
+#--- perform quantile stratification of 90th percentile height ---#
+sraster <- strat_quantiles(
+  mraster = mr$zq90, # input ALS metric - 90th percentile height
+  nStrata = 5, # desired number of strata
+  plot = TRUE,
+  details = TRUE
+)
+
+sraster$plot
+
+```
+
+## Sampling
+
+Now that we have a stratification raster (`sraster`) created, can apply stratified random sampling using the `sample_strat()` algorithm.
+
+![](images/sample-01.png){fig-align="center"}
+
+##  {auto-animate="true"}
+
+Basic stratified random sampling
+
+```{r}
+#| echo: false
+
+library(sgsR)
+
+r <- system.file("extdata", "mraster.tif", package = "sgsR")
+mr <- terra::rast(r)
+
+#--- perform quantile stratification of 90th percentile height ---#
+sraster <- strat_quantiles(
+  mraster = mr$zq90, # input ALS metric - 90th percentile height
+  nStrata = 5 # desired number of strata
+)
+
+```
+
+```{r}
+#| echo: true
+#| eval: false
+
+#--- perform stratified random sampling ---#
+sample_strat(
+  sraster = sraster, # quantiles stratification sraster
+  nSamp = 200 # number of desired samples
+)
+```
+
+##  {auto-animate="true"}
+
+Just like with the stratification algorithms, each sampling algorithm has mandatory parameters.
+
+``` {.r code-line-numbers="3-4"}
+#--- perform stratified random sampling ---#
+sample_strat(
+  sraster = sraster, # quantiles stratification sraster
+  nSamp = 200 # number of desired samples
+)
+```
+
+##  {auto-animate="true"}
+
+Aswell as optional parameters.
+
+``` {.r code-line-numbers="5-6"}
+#--- perform stratified random sampling ---#
+sample_strat(
+  sraster = sraster, # quantiles stratification sraster
+  nSamp = 200, # number of desired samples
+  allocation = "prop", # allocation type (proportional, optimal, equal, manual)
+  mindist = 100, # minimum distance requred between samples
+)
+```
+
+##  {auto-animate="true"}
+
+Aswell as optional parameters.
+
+``` {.r code-line-numbers="7|8|9"}
+#--- perform stratified random sampling ---#
+sample_strat(
+  sraster = sraster, # quantiles stratification sraster
+  nSamp = 200, # number of desired samples
+  allocation = "prop", # allocation type (proportional, optimal, equal, manual)
+  mindist = 100, # minimum distance requred between samples
+  access = access, # constrain sampling to provided access
+  buff_inner = 100, # inner access buffer (No samples this close to access)
+  buff_outer = 300, # outer outer buffer (No samples further away from access)
+)
+```
+
+## 
+
+```{r}
+#| warning: false
+#| echo: false
+#| results: hide
+
+#--- load the access vector using the sf package ---#
+a <- system.file("extdata", "access.shp", package = "sgsR")
+access <- sf::st_read(a)
+
+#--- perform stratified random sampling ---#
+samples <- sample_strat(
+  sraster = sraster, # quantiles stratification sraster
+  nSamp = 200, # number of desired samples
+  allocation = "prop", # allocation type (proportional, optimal, equal, manual)
+  mindist = 100, # minimum distance requred between samples
+  access = access, # constrain sampling to provided access
+  buff_inner = 100, # inner access buffer (No samples this close to access)
+  buff_outer = 300, # outer outer buffer (No samples further away from access)
+  plot = TRUE
+)
+
+```
+
+## Extract
+
+Once the samples have been selected by the algorithm, we can extract ALS metric values for use in eventual modelling.
+
+```{r}
+#| echo: true
+
+extract_metrics(mraster = mr, # ALS metrics
+                existing = samples # stratified samples
+                )
+```
+
+## Pipeline
+
+Creating processing pipelines that integrate all of these steps is simple:
+
+``` r
+#--- stratify -> sample -> extract ---#
+strat_quantiles(mraster = mraster$zq90, nStrata = 5) %>%
+  sample_strat(., nSamp = 200, mindist = 100) %>%
+  extract_metrics(mraster = mraster, existing = .)
+```
+
+
+#| warning: false
+#| echo: true
+#| results: hide
+#| fig-align: center
+set.seed(2022)
+#--- simple random sampling ---#
+existing <- sample_srs(raster = mr, nSamp = 50, plot = TRUE)

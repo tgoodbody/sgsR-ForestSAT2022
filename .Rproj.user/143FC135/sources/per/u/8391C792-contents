@@ -1,0 +1,19 @@
+
+library(sgsR)
+library(terra)
+library(sf)
+
+r <- system.file("extdata", "mraster.tif", package = "sgsR")
+mr <- terra::rast(r)
+
+
+set.seed(2022)
+#--- simple random sampling ---#
+existing <- sample_srs(raster = mr, nSamp = 50, plot = TRUE)
+
+###--- augment sample network using sample_ahels ---###
+#--- perform ahels sampling ---#
+sample_ahels(mraster = mr$zq90,
+             existing = existing,
+             nSamp = 50,
+             details = TRUE)

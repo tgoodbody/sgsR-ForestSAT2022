@@ -1,0 +1,8 @@
+"0","r <- system.file(""extdata"", ""mraster.tif"", package = ""sgsR"")"
+"0","mr <- terra::rast(r)"
+"0",""
+"0","#--- simple random sampling ---#"
+"0","sample_srs(raster = mraster, nSamp = 100, plot = TRUE)"
+"2","Error in sample_srs(raster = mraster, nSamp = 100, plot = TRUE) : 
+  object 'mraster' not found
+"
