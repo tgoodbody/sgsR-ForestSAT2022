@@ -389,7 +389,7 @@ sraster <- strat_quantiles(mraster = mr$zq90, # p90
 
 ## 🎯 Structurally guided sampling {.smaller auto-animate="true"}
 
-- Now that we have stratified our ALS data - we can sample within it!
+-   Now that we have stratified our ALS data - we can sample within it!
 
 ```{r}
 #| echo: true
@@ -417,7 +417,6 @@ sample_strat(sraster = sraster, nSamp = 100, plot = TRUE)
 
 ::: {.fragment .fade-up}
 ::: info-box
-
 <ul>
 
 <li>
@@ -431,11 +430,13 @@ sample_strat(sraster = sraster, nSamp = 100, plot = TRUE)
 <i class="fa-brands fa-github"></i>Repeatable
 
 </li>
+
 <li>
 
 <i class="fa-solid fa-bullseye"></i>Tuneable
 
 </li>
+
 <li>
 
 <i class="fa-solid fa-bullseye"></i>Spatially-explicit
@@ -446,15 +447,13 @@ sample_strat(sraster = sraster, nSamp = 100, plot = TRUE)
 :::
 :::
 
-## Algorithm structure {.smaller}
+## Algorithm structure <i class="fa-brands fa-r-project" style="height:120px;vertical-align:middle;"></i> <img src="images/logo.png" height="120px" style="vertical-align:middle;"/> {.smaller}
 
 ::: incremental
 -   `sgsR` was built using the `terra`, `sf`, & `tidyverse` packages
 
 -   There are 4 primary function verbs that `sgsR` uses:
-
 :::
-
 
 ::: {.fragment .fade-up}
 ::: info-box
@@ -471,11 +470,13 @@ sample_strat(sraster = sraster, nSamp = 100, plot = TRUE)
 <i class="fa-brands fa-github"></i>`sample_*` - allocate samples using srasters produced from strat\_\* functions.
 
 </li>
+
 <li>
 
 <i class="fa-solid fa-bullseye"></i>`calculate_*`- calculate sample information or create useful intermediary sampling products.
 
 </li>
+
 <li>
 
 <i class="fa-solid fa-bullseye"></i>`extract_*` - extract pixels values from rasters to samples
@@ -487,10 +488,10 @@ sample_strat(sraster = sraster, nSamp = 100, plot = TRUE)
 :::
 
 ::: {.fragment .fade-up}
-![](images/flow-01.png){fig-align="center"}
+![](images/flow-01.png){fig-align="center" width="438"}
 :::
 
-# {background-color="#027eb6"}
+# Overview {background-color="#027eb6"}
 
 ![](images/flow.png){fig-align="center"}
 
@@ -687,11 +688,10 @@ samples <- sample_strat(sraster = sraster,
 # [Example 2]{.story} [Augmenting an `existing` sample]{style="float:right;text-align:right;"} {background-color="#027eb6"}
 
 ## Augmenting an `existing` sample {background-color="#027eb6"}
+
 <center>
 
-*"I have an existing sample network, can I use those same sample locations?"*
-<br></br>
-*"If I go and visit those same sample units, where should I locate new samples for structural representation?"*
+*"I have an existing sample network, can I use those same sample locations?"* <br></br> *"If I go and visit those same sample units, where should I locate new samples for structural representation?"*
 
 </center>
 
@@ -713,7 +713,7 @@ set.seed(2022)
 existing <- sample_srs(raster = mr, nSamp = 50, plot = TRUE)
 ```
 
-## [Example 2]{.story} Augmenting an `existing` sample
+## [Example 2]{.story} Augmenting an `existing` sample {.smaller}
 
 *Adapted Hypercube Evaluation of a Legacy Sample (AHELS)* [(Malone, Minansy & Brungard, 2019).](https://peerj.com/articles/6451/)
 
@@ -731,19 +731,25 @@ existing <- sample_srs(raster = mr, nSamp = 50, plot = TRUE)
 <li>
 
 <i class="fa-brands fa-github"></i>Generate quantile and covariance matrix of ALS metrics.
+
 </li>
+
 <li>
 
 <i class="fa-brands fa-github"></i>Determining number of additional samples that can / need to be added
 
 </li>
+
 <li>
 
 <i class="fa-brands fa-github"></i>Identify where new samples are needed to balance quantile density and sampling density.
+
 </li>
+
 <li>
 
 <i class="fa-brands fa-github"></i>Iteratively locate samples.
+
 </li>
 
 </ul>
@@ -770,7 +776,7 @@ existing <- sample_srs(raster = mr, nSamp = 50, plot = TRUE)
 
 ## [Example 2]{.story} Augmenting an `existing` sample
 
-2️⃣ Now we can use the `sample_ahels()` algorithm with our `als` metrics.
+2️⃣ Now we can use the `sample_ahels()` algorithm with our ALS metrics.
 
 ``` {.r code-line-numbers="5-6"}
 #--- simple random sampling ---#
@@ -878,11 +884,15 @@ sample_ahels(mraster = mr,
 # [🤲🤝🙏 Thank you!]{style="float:center;text-align:center;"} {background-color="#027eb6"}
 
 <center>
+
 Special thanks to the Canadian Wood Fibre Centre for funding this research!
+
 </center>
 
 ## 🤲🤝🙏 Thank you!
+
 <br></br>
+
 <center>
 
 ***My Twitter: [\@GoodbodyT](https://twitter.com/GoodbodyT)***
@@ -890,9 +900,14 @@ Special thanks to the Canadian Wood Fibre Centre for funding this research!
 ***IRSS Twitter: [\@IRSS_UBC](https://twitter.com/IRSS_UBC)***
 
 </center>
+
 <br></br>
 
-<center> ***Collaborators*** </center>
+<center>
+
+***Collaborators***
+
+</center>
 
 ::: columns
 ::: {.column width="40%"}

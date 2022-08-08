@@ -3,7 +3,7 @@
     "path": "~/UBC/post_doc/presentation_forestsat2022/presentation.qmd",
     "project_path": "presentation.qmd",
     "type": "quarto_markdown",
-    "hash": "3905959911",
+    "hash": "0",
     "contents": "",
     "dirty": false,
     "created": 1659985318267.0,
@@ -15,18 +15,18 @@
         "source_window_id": "",
         "Source": "Source",
         "docOutlineVisible": "1",
-        "rmdVisualModeLocation": "5869:7636.36328125",
-        "cursorPosition": "47,102",
-        "scrollLine": "38",
+        "rmdVisualModeLocation": "9569:12290.9091796875",
+        "cursorPosition": "778,53",
+        "scrollLine": "759",
         "rmdVisualCollapsedChunks": "",
-        "docOutlineSize": "128"
+        "docOutlineSize": "205"
     },
     "folds": "",
-    "lastKnownWriteTime": 1659995922,
+    "lastKnownWriteTime": 1659996782,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1659995922479,
+    "last_content_update": 1659996782308,
     "read_only": false,
     "read_only_alternatives": []
 }
