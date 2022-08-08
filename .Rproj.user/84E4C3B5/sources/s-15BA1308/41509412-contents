@@ -45,7 +45,7 @@ access <- sf::st_read(a)
 
 <li>
 
-<i class="fa-solid fa-bullseye"></i>Provides stratification and sampling algorithms to guide *model-based* sampling approaches
+<i class="fa-solid fa-bullseye"></i>Provides stratification and sampling algorithms to guide primarily *model-based* sampling approaches
 
 </li>
 
