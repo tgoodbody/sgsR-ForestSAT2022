@@ -1,7 +1,8 @@
 ---
-title: "`sgsR`: Structurally Guided Sampling"
-author: "_Tristan Goodbody, Nicholas Coops, Martin Queinnec, Joanne White, Piotr Tompalski, Andrew Hudak, David Auty, Ruben Valbuena, Antoine LeBoeuf, Ian Sinclair, Grant McCartney, Jean-Francois Prieur, Murray Woods_"
+title: "`sgsR` - Structurally Guided Sampling"
+author: "___Tristan Goodbody__, Nicholas Coops, Martin Queinnec, Joanne White, Piotr Tompalski, Andrew Hudak, David Auty, Ruben Valbuena, Antoine LeBoeuf, Ian Sinclair, Grant McCartney, Jean-Francois Prieur, Murray Woods_"
 institute: "__University of British Columbia__"
+date: "September 2^nd^, 2022 @ Berlin"
 format:
   revealjs: 
     self-contained: true
@@ -13,9 +14,9 @@ format:
     multiplex: true
     width: 1280
     height: 720
-    theme: simple
+    theme: [simple, assets/styles.scss]
     controls: true
-    css: [assets/syntax-highlight.css, assets/custom.css]
+    css: [assets/custom.css]
 execute:
   echo: true
 ---
@@ -36,10 +37,10 @@ access <- sf::st_read(a)
 
 ## Take-away message <i class="fa-brands fa-r-project" style="height:120px;vertical-align:middle;"></i> <img src="images/logo.png" height="120px" style="vertical-align:middle;"/>
 
--   `sgsR` is an R-package developed to implement *structurally guided sampling* approaches for enhanced forest inventories.
+-   **`sgsR`** is an R-package developed to implement *structurally guided sampling* approaches for enhanced forest inventories.
 
 ::: info-box
-`sgsR` stands for **s**tructurally **g**uided **s**ampling implemented in **R**
+**`sgsR`** stands for **s**tructurally **g**uided **s**ampling implemented in **R**
 
 <ul>
 
@@ -64,7 +65,7 @@ access <- sf::st_read(a)
 </ul>
 :::
 
-## Overview {background-color="#006dae"}
+## Overview {background-color="#356734"}
 
 ::: incremental
 -   Brief inventory and sampling overview
@@ -73,12 +74,12 @@ access <- sf::st_read(a)
 
 -   Structurally guided sampling using Airborne Laser Scanning
 
--   `sgsR` overview
+-   **`sgsR`** overview
 
 -   Programmatic examples of the package
 :::
 
-# [🌲🌳 Forest inventories]{style="float:center;text-align:center;"} {background-color="#027eb6"}
+# [🌲🌳 Forest inventories]{style="float:center;text-align:center;"} {background-color="#356734"}
 
 ## 🌲🌳 Forest inventories
 
@@ -112,7 +113,7 @@ access <- sf::st_read(a)
 -   Answers dictate the sampling approaches to fulfill inventory obligations and objectives.
 :::
 
-# [🚩 Sampling]{style="float:center;text-align:center;"} {background-color="#027eb6"}
+# [🚩 Sampling]{style="float:center;text-align:center;"} {background-color="#356734"}
 
 ## 🚩 Sampling
 
@@ -164,7 +165,7 @@ Sampling can be:
 -   Many sampling methods, but traditional and commonly used examples include:
 :::
 
-# [🎲📊 Probability-based sampling]{style="float:center;text-align:center;"} {background-color="#027eb6"}
+# [🎲📊 Probability-based sampling]{style="float:center;text-align:center;"} {background-color="#356734"}
 
 ## 🎲 Random sampling
 
@@ -257,7 +258,7 @@ sample_systematic(raster = mr, cellsize = 1000,
 -   What about using remote sensing data to help guide sampling?
 :::
 
-# [🛰👩🏻‍💻 Auxiliary data]{style="float:center;text-align:center;"} {background-color="#027eb6"}
+# [🛰👩🏻‍💻 Auxiliary data]{style="float:center;text-align:center;"} {background-color="#356734"}
 
 ## 👩🏻‍💻 Auxiliary data
 
@@ -291,7 +292,7 @@ sample_systematic(raster = mr, cellsize = 1000,
 -   Auxiliary data as *a-priori* information to guide *model-based* sampling has been fruitful.
 :::
 
-# [💠🔢 Stratification]{style="float:center;text-align:center;"} {background-color="#027eb6"}
+# [💠🔢 Stratification]{style="float:center;text-align:center;"} {background-color="#356734"}
 
 ## 💠🔢 Stratification
 
@@ -407,13 +408,13 @@ sraster <- strat_quantiles(mraster = mr$zq90, # p90
 sample_strat(sraster = sraster, nSamp = 100, plot = TRUE)
 ```
 
-# [`sgsR`]{style="float:center;text-align:center;"} {background-color="#027eb6"}
+# [`sgsR`]{style="float:center;text-align:center;"} {background-color="#356734"}
 
 ![](images/logo.png){fig-align="center"}
 
 ## `sgsR` purpose <img src="images/logo.png" height="120px" style="vertical-align:middle;"/> {.smaller}
 
-`sgsR` is a toolbox for practitioners to leverage these benefits to provide primarily *model-based* sampling approaches for forest inventories that are.
+**`sgsR`** is a toolbox for practitioners to leverage these benefits to provide primarily *model-based* sampling approaches for forest inventories that are.
 
 ::: {.fragment .fade-up}
 ::: info-box
@@ -450,9 +451,9 @@ sample_strat(sraster = sraster, nSamp = 100, plot = TRUE)
 ## Algorithm structure <i class="fa-brands fa-r-project" style="height:120px;vertical-align:middle;"></i> <img src="images/logo.png" height="120px" style="vertical-align:middle;"/> {.smaller}
 
 ::: incremental
--   `sgsR` was built using the `terra`, `sf`, & `tidyverse` packages
+-   **`sgsR`** was built using the `terra`, `sf`, & `tidyverse` packages
 
--   There are 4 primary function verbs that `sgsR` uses:
+-   There are 4 primary function verbs that **`sgsR`** uses:
 :::
 
 ::: {.fragment .fade-up}
@@ -491,13 +492,14 @@ sample_strat(sraster = sraster, nSamp = 100, plot = TRUE)
 ![](images/flow-01.png){fig-align="center" width="438"}
 :::
 
-# Overview {background-color="#027eb6"}
+## {background-color="#356734"}
 
-![](images/flow.png){fig-align="center"}
+![`sgsR` overview](images/flow.png){fig-align="center" }
 
-# [Example 1]{.story} [Stratified sampling constrained by access]{style="float:right;text-align:right;"} {background-color="#027eb6"}
 
-## [Example 1]{.story} Stratified sampling constrained by access
+# [Example 1]{.story} 🌱 [Stratified sampling constrained by access]{style="float:right;text-align:right;"} {background-color="#356734"}
+
+## [Example 1]{.story} 🌱 Stratified sampling constrained by access
 
 1️⃣ Read in some ALS metrics
 
@@ -510,7 +512,7 @@ r <- system.file("extdata", "mraster.tif", package = "sgsR")
 mraster <- terra::rast(r)
 ```
 
-## [Example 1]{.story} Stratified sampling constrained by access
+## [Example 1]{.story} 🌱 Stratified sampling constrained by access
 
 1️⃣ Read in some ALS metrics
 
@@ -531,7 +533,7 @@ mraster <- terra::rast(r)
 terra::plot(mr$zq90, main = "p90")
 ```
 
-## [Example 1]{.story} Stratified sampling constrained by access {auto-animate="true"}
+## [Example 1]{.story} 🌱 Stratified sampling constrained by access {auto-animate="true"}
 
 2️⃣ Read in a linear road `access` network.
 
@@ -552,7 +554,7 @@ terra::plot(mr$zq90, main = "p90 with road access")
 plot(access, add = TRUE, col = "black")
 ```
 
-## [Example 1]{.story} Stratified sampling constrained by access {auto-animate="true"}
+## [Example 1]{.story} 🌱 Stratified sampling constrained by access {auto-animate="true"}
 
 3️⃣ Stratify `p90` in to 4 strata based on quantiles.
 
@@ -572,7 +574,7 @@ sraster <- strat_quantiles(mraster = mr$zq90, # input ALS metric - p90
                            nStrata = 4, plot = TRUE) # desired number of strata (4)
 ```
 
-## [Example 1]{.story} Stratified sampling constrained by access {auto-animate="true"}
+## [Example 1]{.story} 🌱 Stratified sampling constrained by access {auto-animate="true"}
 
 4️⃣ Now lets use the `sraster` output.
 
@@ -589,7 +591,7 @@ samples <- sample_strat(sraster = sraster,
                         buff_outer = 400)
 ```
 
-## [Example 1]{.story} Stratified sampling constrained by access {auto-animate="true"}
+## [Example 1]{.story} 🌱 Stratified sampling constrained by access {auto-animate="true"}
 
 5️⃣ Request 100 proportionally allocated samples.
 
@@ -606,7 +608,7 @@ samples <- sample_strat(sraster = sraster,
                         buff_outer = 400)
 ```
 
-## [Example 1]{.story} Stratified sampling constrained by access {auto-animate="true"}
+## [Example 1]{.story} 🌱 Stratified sampling constrained by access {auto-animate="true"}
 
 6️⃣ Bring in the `access` road.
 
@@ -623,7 +625,7 @@ samples <- sample_strat(sraster = sraster,
                         buff_outer = 400)
 ```
 
-## [Example 1]{.story} Stratified sampling constrained by access {auto-animate="true"}
+## [Example 1]{.story} 🌱 Stratified sampling constrained by access {auto-animate="true"}
 
 7️⃣ Specify we dont want samples within 50 m of `access`.
 
@@ -640,7 +642,7 @@ samples <- sample_strat(sraster = sraster,
                         buff_outer = 400)
 ```
 
-## [Example 1]{.story} Stratified sampling constrained by access {auto-animate="true"}
+## [Example 1]{.story} 🌱 Stratified sampling constrained by access {auto-animate="true"}
 
 8️⃣ Or further than 400 m from `access`.
 
@@ -657,7 +659,7 @@ samples <- sample_strat(sraster = sraster,
                         buff_outer = 400)
 ```
 
-## [Example 1]{.story} Stratified sampling constrained by access {.smaller}
+## [Example 1]{.story} 🌱 Stratified sampling constrained by access {.smaller}
 
 ![](images/example1.png){fig-align="center"}
 
@@ -679,15 +681,15 @@ samples <- sample_strat(sraster = sraster,
 </ul>
 :::
 
-## [Example 1]{.story} Comparing distributions
+## [Example 1]{.story} 🌱 Comparing distributions
 
 -   When constraining by `access` its important to make sure that you're still sampling the entire distribution of metrics.
 
 ![](images/accesscompare.png){fig-align="center"}
 
-# [Example 2]{.story} [Augmenting an `existing` sample]{style="float:right;text-align:right;"} {background-color="#027eb6"}
+# [Example 2]{.story} 🌿 [Augmenting an `existing` sample]{style="float:right;text-align:right;"} {background-color="#356734"}
 
-## Augmenting an `existing` sample {background-color="#027eb6"}
+## 🌿 Augmenting an `existing` sample {background-color="#356734"}
 
 <center>
 
@@ -697,7 +699,7 @@ samples <- sample_strat(sraster = sraster,
 
 ![](images/density.png){fig-align="center"}
 
-## [Example 2]{.story} Augmenting an `existing` sample {.smaller}
+## [Example 2]{.story} 🌿 Augmenting an `existing` sample {.smaller}
 
 -   Lets create an `existing` sample of 50 plots using simple random sampling (`sample_srs`).
 
@@ -713,7 +715,7 @@ set.seed(2022)
 existing <- sample_srs(raster = mr, nSamp = 50, plot = TRUE)
 ```
 
-## [Example 2]{.story} Augmenting an `existing` sample {.smaller}
+## [Example 2]{.story} 🌿 Augmenting an `existing` sample {.smaller}
 
 *Adapted Hypercube Evaluation of a Legacy Sample (AHELS)* [(Malone, Minansy & Brungard, 2019).](https://peerj.com/articles/6451/)
 
@@ -755,7 +757,7 @@ existing <- sample_srs(raster = mr, nSamp = 50, plot = TRUE)
 </ul>
 :::
 
-## [Example 2]{.story} Augmenting an `existing` sample
+## [Example 2]{.story} 🌿 Augmenting an `existing` sample
 
 1️⃣ We have our `existing` sample
 
@@ -774,7 +776,7 @@ set.seed(2022)
 existing <- sample_srs(raster = mr, nSamp = 50, plot = TRUE)
 ```
 
-## [Example 2]{.story} Augmenting an `existing` sample
+## [Example 2]{.story} 🌿 Augmenting an `existing` sample
 
 2️⃣ Now we can use the `sample_ahels()` algorithm with our ALS metrics.
 
@@ -789,7 +791,7 @@ sample_ahels(mraster = mr,
              nSamp = 50)
 ```
 
-## [Example 2]{.story} Augmenting an `existing` sample
+## [Example 2]{.story} 🌿 Augmenting an `existing` sample
 
 3️⃣ Specify our `existing` sample.
 
@@ -804,7 +806,7 @@ sample_ahels(mraster = mr,
              nSamp = 50)
 ```
 
-## [Example 2]{.story} Augmenting an `existing` sample
+## [Example 2]{.story} 🌿 Augmenting an `existing` sample
 
 4️⃣ And specify we want 50 new sample units (`nSamp`).
 
@@ -819,7 +821,7 @@ sample_ahels(mraster = mr,
              nSamp = 50)
 ```
 
-## [Example 2]{.story} Augmenting an `existing` sample
+## [Example 2]{.story} 🌿 Augmenting an `existing` sample
 
 ![](images/e2s.png){fig-align="center"}
 
@@ -870,18 +872,18 @@ sample_ahels(mraster = mr,
 :::
 
 ::: {.fragment .fade-in}
--   The `sgsR` package provides many methods to implement SGS approaches.
+-   The **`sgsR`** package provides many methods to implement SGS approaches.
 :::
 
 ::: {.fragment .fade-in}
--   We presented a few examples of `sgsR` functionality.
+-   We presented a few examples of **`sgsR`** functionality.
 :::
 
 ::: {.fragment .fade-in}
 -   If interested - come and talk to me & use the link on the slides more info!
 :::
 
-# [🤲🤝🙏 Thank you!]{style="float:center;text-align:center;"} {background-color="#027eb6"}
+# [🤲🤝🙏 Thank you!]{style="float:center;text-align:center;"} {background-color="#356734"}
 
 <center>
 
@@ -889,9 +891,7 @@ Special thanks to the Canadian Wood Fibre Centre for funding this research!
 
 </center>
 
-## 🤲🤝🙏 Thank you!
-
-<br></br>
+## 🤲🤝🙏 Thank you! {font-size="30em"}
 
 <center>
 
@@ -901,16 +901,13 @@ Special thanks to the Canadian Wood Fibre Centre for funding this research!
 
 </center>
 
-<br></br>
-
 <center>
 
+::: info-box
 ***Collaborators***
 
-</center>
-
 ::: columns
-::: {.column width="40%"}
+::: {.column width="30%"}
 -   Martin Queinnec
 -   Joanne White
 -   Andrew Hudak
@@ -922,7 +919,7 @@ Special thanks to the Canadian Wood Fibre Centre for funding this research!
 ::: {.column width="10%"}
 :::
 
-::: {.column width="40%"}
+::: {.column width="30%"}
 -   Antoine Leboeuf
 -   Ian Sinclair
 -   Grant McCartney
@@ -930,6 +927,10 @@ Special thanks to the Canadian Wood Fibre Centre for funding this research!
 -   Piotr Tompalski
 :::
 :::
+
+:::
+
+</center>
 
 ## 🤲🤝🙏 Thank you!
 

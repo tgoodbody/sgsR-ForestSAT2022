@@ -2,10 +2,18 @@
   font-size: 40px!important;
 }
 
+#title-slide .title {
+  font-size: 80px!important;
+}
+
+#title-slide .date {
+  font-size: 30px!important;
+}
+
 .box {
   margin-top: 10px;
   margin-right: 10px;
-  border: 5px solid #006DAE;
+  border: 5px solid #43602D;
   padding: 10px;
   font-size: 26px;
   background-color: #E6E6E6;
@@ -18,12 +26,12 @@
 .info-box {
   margin-top: 10px;
   margin-right: 10px;
-  border-left: 10px solid #006DAE;
+  border-left: 10px solid #43602D;
   padding-left: 20px;
   padding-right: 10px;
   padding-top: 10px;
   padding-bottom: 10px;
-  background-color: #e8f4f8;
+  background-color: #ebf8e2;
 }
 
 .fa-ul {
@@ -53,3 +61,4 @@
   font-family: 'Roboto Condensed', sans-serif;
   vertical-align: middle;
 }
+
