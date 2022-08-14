@@ -1,0 +1,82 @@
+{
+    "sources": [
+        {
+            "DOI": "10.14214/sf.943",
+            "URL": "http://dx.doi.org/10.14214/sf.943",
+            "author": [
+                {
+                    "family": "Gobakken",
+                    "given": "Terje"
+                },
+                {
+                    "family": "Korhonen",
+                    "given": "Lauri"
+                },
+                {
+                    "family": "Næsset",
+                    "given": "Erik"
+                }
+            ],
+            "container-title": "Silva Fennica",
+            "id": "gobakken2013",
+            "issue": "5",
+            "issued": {
+                "date-parts": [
+                    [
+                        2013
+                    ]
+                ]
+            },
+            "title": "Laser-assisted selection of field plots for an area-based forest inventory",
+            "type": "article-journal",
+            "volume": "47"
+        },
+        {
+            "DOI": "10.1029/2008jg000870",
+            "URL": "http://dx.doi.org/10.1029/2008JG000870",
+            "author": [
+                {
+                    "family": "Hawbaker",
+                    "given": "Todd J."
+                },
+                {
+                    "family": "Keuler",
+                    "given": "Nicholas S."
+                },
+                {
+                    "family": "Lesak",
+                    "given": "Adrian A."
+                },
+                {
+                    "family": "Gobakken",
+                    "given": "Terje"
+                },
+                {
+                    "family": "Contrucci",
+                    "given": "Kirk"
+                },
+                {
+                    "family": "Radeloff",
+                    "given": "Volker C."
+                }
+            ],
+            "container-title": "Journal of Geophysical Research: Biogeosciences",
+            "id": "hawbaker2009",
+            "issue": "G2",
+            "issued": {
+                "date-parts": [
+                    [
+                        2009,
+                        6
+                    ]
+                ]
+            },
+            "language": "en",
+            "page": "n/a-n/a",
+            "title": "Improved estimates of forest vegetation structure and biomass with a LiDAR-optimized sampling design",
+            "type": "article-journal",
+            "volume": "114"
+        }
+    ],
+    "project_biblios": []
+}
