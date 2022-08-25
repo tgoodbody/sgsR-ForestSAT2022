@@ -47,7 +47,13 @@ access <- sf::st_read(a)
 
 <li>
 
-<i class="fa-solid fa-bullseye"></i>Provides stratification and sampling algorithms to guide primarily *model-based* sampling approaches
+<i class="fa-solid fa-bullseye"></i>Stratification and sampling functions to guide primarily *model-based* sampling approaches
+
+</li>
+
+<li>
+
+<i class="fa-solid fa-bullseye"></i>Focus on *management-level inventories*
 
 </li>
 
@@ -59,7 +65,7 @@ access <- sf::st_read(a)
 
 <li>
 
-<i class="fa-solid fa-bowl-food"></i>Funded by the **Canadian Wood Fibre Centre**
+<i class="fa-solid fa-bowl-food"></i>Funded by the **Canadian Wood Fibre Centre, Canadian Forest Service**
 
 </li>
 
@@ -415,7 +421,7 @@ sample_strat(sraster = sraster, nSamp = 100, plot = TRUE)
 
 ## `sgsR` purpose <img src="images/logo.png" height="120px" style="vertical-align:middle;"/> {.smaller}
 
-**`sgsR`** is a toolbox for practitioners to leverage these benefits to provide primarily *model-based* sampling approaches for forest inventories that are:
+**`sgsR`** is a toolbox to provide primarily *model-based* sampling approaches for *management-level* forest inventories that are:
 
 ::: {.fragment .fade-up}
 ::: info-box
