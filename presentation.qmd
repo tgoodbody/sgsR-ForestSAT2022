@@ -980,6 +980,10 @@ Special thanks to the Canadian Wood Fibre Centre for funding this research!
 
 ![](images/affiliations.png)
 
+## 🌲👀 See for yourself!
+
+![](images/scanme.png){fig-align="center" width="610"}
+
 ## Additional resources
 
 This presentation was made with [Quarto](https://quarto.org/) and will be made available on Github following the presentation at ForestSAT\
