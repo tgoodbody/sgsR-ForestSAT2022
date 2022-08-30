@@ -36,9 +36,9 @@ a <- system.file("extdata", "access.shp", package = "sgsR")
 access <- sf::st_read(a)
 ```
 
-## Take-away message <i class="fa-brands fa-r-project" style="height:120px;vertical-align:middle;"></i> <img src="images/logo.png" height="120px" style="vertical-align:middle;"/>
+## Take-away message <i class="fa-brands fa-r-project" style="height:120px;vertical-align:middle;"></i> <img src="images/logo.png" height="120px" style="vertical-align:middle;"/> {.smaller}
 
--   **`sgsR`** is an R-package developed to implement *structurally guided sampling* approaches for enhanced forest inventories.
+-   **`sgsR`** - R-package for *structurally guided sampling* for enhanced forest inventories.
 
 ::: info-box
 **`sgsR`** stands for **s**tructurally **g**uided **s**ampling implemented in **R**
@@ -47,7 +47,7 @@ access <- sf::st_read(a)
 
 <li>
 
-<i class="fa-solid fa-bullseye"></i>Stratification and sampling functions to guide primarily *model-based* sampling approaches
+<i class="fa-solid fa-bullseye"></i>Stratification and sampling functions to guide *primarily model-based* sampling approaches
 
 </li>
 
@@ -90,7 +90,7 @@ access <- sf::st_read(a)
 
 ## 🌲🌳 Forest inventories
 
-**Purpose:** Obtain knowledge about the population (forest area) under investigation and provide estimates of specific target variables
+**Purpose:** Obtain knowledge about the population (forest area) under investigation and provide estimates of specific target attributes
 
 ::: {.fragment .fade-up}
 **Needed information:** Defined by the scope & scale of the inventory. Answered by questions like:
@@ -423,7 +423,6 @@ sample_strat(sraster = sraster, nSamp = 100, plot = TRUE)
 
 **`sgsR`** is a toolbox to provide primarily *model-based* sampling approaches for *management-level* forest inventories that are:
 
-::: {.fragment .fade-up}
 ::: info-box
 <ul>
 
@@ -452,7 +451,6 @@ sample_strat(sraster = sraster, nSamp = 100, plot = TRUE)
 </li>
 
 </ul>
-:::
 :::
 
 ## Algorithm structure <i class="fa-brands fa-r-project" style="height:120px;vertical-align:middle;"></i> <img src="images/logo.png" height="120px" style="vertical-align:middle;"/> {.smaller}
@@ -496,12 +494,12 @@ sample_strat(sraster = sraster, nSamp = 100, plot = TRUE)
 :::
 
 ::: {.fragment .fade-up}
-![](images/flow-01.png){fig-align="center"}
+![](images/flow-01.png){fig-align="center" width="655"}
 :::
 
 ##  {background-color="#356734"}
 
-![`sgsR` overview](images/flow.png){fig-align="center"}
+![](images/flow.png){fig-align="center"}
 
 # [Example 1]{.story} 🌱 [Stratified sampling constrained by access]{style="float:right;text-align:right;"} {background-color="#356734"}
 
@@ -771,7 +769,7 @@ existing <- sample_srs(raster = mr, nSamp = 50, plot = TRUE)
 
 <li>
 
-<i class="fa-brands fa-github"></i>Determining representation of `existing` sample
+<i class="fa-brands fa-github"></i>Determine representation of `existing` sample
 
 </li>
 
