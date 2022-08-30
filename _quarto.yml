@@ -1,5 +1,6 @@
 project:
-  title: "presentation"
+  title: "sgsR-ForestSAT2022"
+  output-dir: docs
 
 editor: visual
 
