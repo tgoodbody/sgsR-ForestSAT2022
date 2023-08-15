@@ -45,29 +45,13 @@ access <- sf::st_read(a)
 
 <ul>
 
-<li>
+<li><i class="fa-solid fa-bullseye"></i>Stratification and sampling functions to guide *primarily model-based* sampling approaches</li>
 
-<i class="fa-solid fa-bullseye"></i>Stratification and sampling functions to guide *primarily model-based* sampling approaches
+<li><i class="fa-solid fa-bullseye"></i>Focus on *management-level inventories*</li>
 
-</li>
+<li><i class="fa-brands fa-github"></i>[Documentation and vignettes online](https://tgoodbody.github.io/sgsR/)</li>
 
-<li>
-
-<i class="fa-solid fa-bullseye"></i>Focus on *management-level inventories*
-
-</li>
-
-<li>
-
-<i class="fa-brands fa-github"></i>[Documentation and vignettes online](https://tgoodbody.github.io/sgsR/)
-
-</li>
-
-<li>
-
-<i class="fa-solid fa-bowl-food"></i>Funded by the **Canadian Wood Fibre Centre, Canadian Forest Service**
-
-</li>
+<li><i class="fa-solid fa-bowl-food"></i>Funded by the **Canadian Wood Fibre Centre, Canadian Forest Service**</li>
 
 </ul>
 :::
@@ -100,17 +84,9 @@ access <- sf::st_read(a)
 ::: info-box
 <ul>
 
-<li>
+<li><i class="fa-solid fa-bullseye"></i>Who/what is the information for? (e.g. Reporting obligations, timber production)</li>
 
-<i class="fa-solid fa-bullseye"></i>Who/what is the information for? (e.g. Reporting obligations, timber production)
-
-</li>
-
-<li>
-
-<i class="fa-brands fa-github"></i>How big of an area are we inventorying? (e.g. National level, operational level)
-
-</li>
+<li><i class="fa-brands fa-github"></i>How big of an area are we inventorying? (e.g. National level, operational level)</li>
 
 </ul>
 :::
@@ -125,11 +101,7 @@ access <- sf::st_read(a)
 ## 🚩 Sampling
 
 ::: {.fragment .fade-up}
-<center>
-
-***Mensuration is a cornerstone of forest management***
-
-</center>
+<center>***Mensuration is a cornerstone of forest management***</center>
 :::
 
 ::: {.fragment .fade-up}
@@ -142,23 +114,11 @@ Sampling can be:
 
 <ul>
 
-<li>
+<li><i class="fa-solid fa-bullseye"></i>Labour intensive</li>
 
-<i class="fa-solid fa-bullseye"></i>Labour intensive
+<li><i class="fa-brands fa-github"></i>Logistically challenging</li>
 
-</li>
-
-<li>
-
-<i class="fa-brands fa-github"></i>Logistically challenging
-
-</li>
-
-<li>
-
-<i class="fa-brands fa-github"></i>**Expensive**
-
-</li>
+<li><i class="fa-brands fa-github"></i>**Expensive**</li>
 
 </ul>
 :::
@@ -181,7 +141,6 @@ Sampling can be:
 #| fig-align: center
 #--- simple random sampling ---#
 sample_srs(raster = mr, nSamp = 100, plot = TRUE)
-
 ```
 
 ## 🟩 Systematic sampling
@@ -195,7 +154,6 @@ sample_srs(raster = mr, nSamp = 100, plot = TRUE)
 #| fig-align: center
 #--- systematic sampling ---#
 sample_systematic(raster = mr, cellsize = 1000, plot = TRUE)
-
 ```
 
 ## 🟩 Systematic sampling {auto-animate="true"}
@@ -209,7 +167,6 @@ sample_systematic(raster = mr, cellsize = 1000, plot = TRUE)
 #| fig-align: center
 #--- systematic sampling in hexagons ---#
 sample_systematic(raster = mr, cellsize = 1000, square = FALSE, plot = TRUE)
-
 ```
 
 ## 🟩 Systematic random sampling {auto-animate="true"}
@@ -224,7 +181,6 @@ sample_systematic(raster = mr, cellsize = 1000, square = FALSE, plot = TRUE)
 #--- systematic random sampling ---#
 sample_systematic(raster = mr, cellsize = 1000, 
                   square = FALSE, location = "random", plot = TRUE)
-
 ```
 
 ## 🎲📊 Traditional sampling approaches
@@ -235,23 +191,11 @@ sample_systematic(raster = mr, cellsize = 1000,
 ::: info-box
 <ul>
 
-<li>
+<li><i class="fa-solid fa-bullseye"></i>Randomized</li>
 
-<i class="fa-solid fa-bullseye"></i>Randomized
+<li><i class="fa-brands fa-github"></i>Sampling unit probabilities is equal, known, or can be known</li>
 
-</li>
-
-<li>
-
-<i class="fa-brands fa-github"></i>Sampling unit probabilities is equal, known, or can be known
-
-</li>
-
-<li>
-
-<i class="fa-brands fa-github"></i>Different methods exist *(e.g. simple random, systematic)*
-
-</li>
+<li><i class="fa-brands fa-github"></i>Different methods exist *(e.g. simple random, systematic)*</li>
 
 </ul>
 :::
@@ -279,23 +223,11 @@ sample_systematic(raster = mr, cellsize = 1000,
 ::: info-box
 <ul>
 
-<li>
+<li><i class="fa-solid fa-bullseye"></i>Imagery *(satellite, airborne, drone)*</li>
 
-<i class="fa-solid fa-bullseye"></i>Imagery *(satellite, airborne, drone)*
+<li><i class="fa-brands fa-github"></i>Feature-based inventories *(species, management type)*</li>
 
-</li>
-
-<li>
-
-<i class="fa-brands fa-github"></i>Feature-based inventories *(species, management type)*
-
-</li>
-
-<li>
-
-<i class="fa-brands fa-github"></i>ALS metrics *(height, cover, variability)*
-
-</li>
+<li><i class="fa-brands fa-github"></i>ALS metrics *(height, cover, variability)*</li>
 
 </ul>
 :::
@@ -317,21 +249,13 @@ sample_systematic(raster = mr, cellsize = 1000,
 
 ## 💠🔢 Stratification
 
-<center>
-
-*"Our results highlight that [LiDAR data integrated with field data sampling designs can provide broad-scale assessments of vegetation structure and biomass]{style="color:red"}, i.e., information crucial for carbon and biodiversity science."* [@hawbaker2009]
-
-</center>
+<center>*"Our results highlight that [LiDAR data integrated with field data sampling designs can provide broad-scale assessments of vegetation structure and biomass]{style="color:red"}, i.e., information crucial for carbon and biodiversity science."* [@hawbaker2009]</center>
 
 ![](images/sgs.png){fig-align="center"}
 
 ## 💠🔢 Stratification
 
-<center>
-
-*"The ALS data also provides an [excellent source of prior information]{style="color:red"} that may be used in the [design phase of the field survey to reduce the size of the field data set."]{style="color:red"}*[@gobakken2013]
-
-</center>
+<center>*"The ALS data also provides an [excellent source of prior information]{style="color:red"} that may be used in the [design phase of the field survey to reduce the size of the field data set."]{style="color:red"}*[@gobakken2013]</center>
 
 ![](images/sgs2.png){fig-align="center" width="863"}
 
@@ -367,30 +291,16 @@ sraster <- strat_quantiles(mraster = mr$zq90, # p90
 
 ``` r
 #--- perform dual metric stratification ---#
-sraster <- strat_quantiles(mraster = mr$zq90, # p90
-                           mraster2 = mr$zsd, # standard deviation of height
-                           nStrata = 10, # 10 strata in p90
-                           nStrata2 = 3) # 3 strata in zsd
+sraster <- strat_quantiles(mraster = mr[[c(1,3)]], # p90
+                           nStrata = list(10,3))
 ```
 
 ## 💠🔢 Stratification - [2]{.circle} metrics {auto-animate="true"}
 
-``` {.r code-line-numbers="2,4"}
+``` {.r code-line-numbers="2:3"}
 #--- perform dual metric stratification ---#
-sraster <- strat_quantiles(mraster = mr$zq90, # p90
-                           mraster2 = mr$zsd, # standard deviation of height
-                           nStrata = 10, # 10 strata in p90
-                           nStrata2 = 3) # 3 strata in zsd
-```
-
-## 💠🔢 Stratification - [2]{.circle} metrics {auto-animate="true"}
-
-``` {.r code-line-numbers="3,5"}
-#--- perform dual metric stratification ---#
-sraster <- strat_quantiles(mraster = mr$zq90, # p90
-                           mraster2 = mr$zsd, # standard deviation of height
-                           nStrata = 10, # 10 strata in p90
-                           nStrata2 = 3) # 3 strata in zsd
+sraster <- strat_quantiles(mraster = mr[[c(1,3)]], # p90 & zsd
+                           nStrata = list(10,3))
 ```
 
 ::: {.fragment .fade-up}
@@ -407,12 +317,10 @@ sraster <- strat_quantiles(mraster = mr$zq90, # p90
 
 #--- perform stratification ---#
 sraster <- strat_quantiles(mraster = mr$zq90, # p90
-                           mraster2 = mr$zsd, # standard deviation of height
-                           nStrata = 10, # 10 strata in p90
-                           nStrata2 = 3) # 3 strata in zsd
+                           nStrata = 10)
 
 #--- structurally guided stratified sampling ---#
-sample_strat(sraster = sraster, nSamp = 100, plot = TRUE)
+sample_strat(sraster = sraster, nSamp = 100,mindist = 200, plot = TRUE)
 ```
 
 # [`sgsR`]{style="float:center;text-align:center;"} {background-color="#356734"}
@@ -426,29 +334,13 @@ sample_strat(sraster = sraster, nSamp = 100, plot = TRUE)
 ::: info-box
 <ul>
 
-<li>
+<li><i class="fa-brands fa-github"></i>Transparent</li>
 
-<i class="fa-brands fa-github"></i>Transparent
+<li><i class="fa-brands fa-github"></i>Repeatable</li>
 
-</li>
+<li><i class="fa-solid fa-bullseye"></i>Tuneable</li>
 
-<li>
-
-<i class="fa-brands fa-github"></i>Repeatable
-
-</li>
-
-<li>
-
-<i class="fa-solid fa-bullseye"></i>Tuneable
-
-</li>
-
-<li>
-
-<i class="fa-solid fa-bullseye"></i>Spatially-explicit
-
-</li>
+<li><i class="fa-solid fa-bullseye"></i>Spatially-explicit</li>
 
 </ul>
 :::
@@ -465,29 +357,13 @@ sample_strat(sraster = sraster, nSamp = 100, plot = TRUE)
 ::: info-box
 <ul>
 
-<li>
+<li><i class="fa-brands fa-github"></i>`strat_*` - apply stratification to metrics raster (mraster) and output a stratified raster (sraster)</li>
 
-<i class="fa-brands fa-github"></i>`strat_*` - apply stratification to metrics raster (mraster) and output a stratified raster (sraster)
+<li><i class="fa-brands fa-github"></i>`sample_*` - allocate samples using srasters produced from strat\_\* functions</li>
 
-</li>
+<li><i class="fa-solid fa-bullseye"></i>`calculate_*`- calculate sample information or create useful intermediary sampling products</li>
 
-<li>
-
-<i class="fa-brands fa-github"></i>`sample_*` - allocate samples using srasters produced from strat\_\* functions
-
-</li>
-
-<li>
-
-<i class="fa-solid fa-bullseye"></i>`calculate_*`- calculate sample information or create useful intermediary sampling products
-
-</li>
-
-<li>
-
-<i class="fa-solid fa-bullseye"></i>`extract_*` - extract pixels values from rasters to samples
-
-</li>
+<li><i class="fa-solid fa-bullseye"></i>`extract_*` - extract pixels values from rasters to samples</li>
 
 </ul>
 :::
@@ -502,6 +378,20 @@ sample_strat(sraster = sraster, nSamp = 100, plot = TRUE)
 ![](images/flow.png){fig-align="center"}
 
 # [Example 1]{.story} 🌱 [Stratified sampling constrained by access]{style="float:right;text-align:right;"} {background-color="#356734"}
+
+## [Example 1]{.story} 🌱 Stratified sampling constrained by access
+
+::: incremental
+
+-   Imagine you are a forester who needs some *new* plots
+
+-   You love the idea of sgsR and want to use it
+
+:::
+
+::: {.fragment .fade-up}
+![](images/rik.jpeg){fig-align="center"}
+:::
 
 ## [Example 1]{.story} 🌱 Stratified sampling constrained by access
 
@@ -693,17 +583,9 @@ samples <- sample_strat(sraster = sraster,
 ::: info-box
 <ul>
 
-<li>
+<li><i class="fa-brands fa-github"></i>Mapped result **(A)** and plotted result **(B)**</li>
 
-<i class="fa-brands fa-github"></i>Mapped result **(A)** and plotted result **(B)**
-
-</li>
-
-<li>
-
-<i class="fa-brands fa-github"></i>Note buffered `access` in **A**. Points are samples in both **A** & **B**
-
-</li>
+<li><i class="fa-brands fa-github"></i>Note buffered `access` in **A**. Points are samples in both **A** & **B**</li>
 
 </ul>
 :::
@@ -715,17 +597,9 @@ samples <- sample_strat(sraster = sraster,
 ::: info-box
 <ul>
 
-<li>
+<li><i class="fa-brands fa-github"></i> Cumulative frequency distributions</li>
 
-<i class="fa-brands fa-github"></i> Cumulative frequency distributions
-
-</li>
-
-<li>
-
-<i class="fa-brands fa-github"></i>`access` constrained vs full extent for *p90* **(A)** and *zsd* **(B)**
-
-</li>
+<li><i class="fa-brands fa-github"></i>`access` constrained vs full extent for *p90* **(A)** and *zsd* **(B)**</li>
 
 </ul>
 :::
@@ -734,11 +608,7 @@ samples <- sample_strat(sraster = sraster,
 
 ## 🌿 Augmenting an `existing` sample {background-color="#356734"}
 
-<center>
-
-*"I have an existing sample network, can I use those same sample locations?"* <br></br> *"If I go and visit those same sample units, where should I locate new samples for structural representation?"*
-
-</center>
+<center>*"I have an existing sample network, can I use those same sample locations?"* <br></br> *"If I go and visit those same sample units, where should I locate new samples for structural representation?"*</center>
 
 ![](images/density.png){fig-align="center"}
 
@@ -767,35 +637,15 @@ existing <- sample_srs(raster = mr, nSamp = 50, plot = TRUE)
 
 <ul>
 
-<li>
+<li><i class="fa-brands fa-github"></i>Determine representation of `existing` sample</li>
 
-<i class="fa-brands fa-github"></i>Determine representation of `existing` sample
+<li><i class="fa-brands fa-github"></i>Generate quantile and covariance matrix of ALS metrics</li>
 
-</li>
+<li><i class="fa-brands fa-github"></i>Determining number of additional samples that can / need to be added</li>
 
-<li>
+<li><i class="fa-brands fa-github"></i>Identify where new samples are needed to balance quantile density and sampling density</li>
 
-<i class="fa-brands fa-github"></i>Generate quantile and covariance matrix of ALS metrics
-
-</li>
-
-<li>
-
-<i class="fa-brands fa-github"></i>Determining number of additional samples that can / need to be added
-
-</li>
-
-<li>
-
-<i class="fa-brands fa-github"></i>Identify where new samples are needed to balance quantile density and sampling density
-
-</li>
-
-<li>
-
-<i class="fa-brands fa-github"></i>Iteratively locate samples
-
-</li>
+<li><i class="fa-brands fa-github"></i>Iteratively locate samples</li>
 
 </ul>
 :::
@@ -871,17 +721,9 @@ sample_ahels(mraster = mr,
 ::: info-box
 <ul>
 
-<li>
+<li><i class="fa-brands fa-github"></i>Mapped result **(A)** and plotted result **(B)**</li>
 
-<i class="fa-brands fa-github"></i>Mapped result **(A)** and plotted result **(B)**
-
-</li>
-
-<li>
-
-<i class="fa-brands fa-github"></i>Note ratios (black/red) and additional added samples *(e.g. [n = 2]{style="color:red"}*)
-
-</li>
+<li><i class="fa-brands fa-github"></i>Note ratios (black/red) and additional added samples *(e.g. [n = 2]{style="color:red"}*)</li>
 
 </ul>
 :::
@@ -893,17 +735,9 @@ sample_ahels(mraster = mr,
 ::: info-box
 <ul>
 
-<li>
+<li><i class="fa-brands fa-github"></i>`existing` only **(A)** and addition of new samples **(B)**</li>
 
-<i class="fa-brands fa-github"></i>`existing` only **(A)** and addition of new samples **(B)**
-
-</li>
-
-<li>
-
-<i class="fa-brands fa-github"></i>We see that metric and sample density become quite even - structurally representative
-
-</li>
+<li><i class="fa-brands fa-github"></i>We see that metric and sample density become quite even - structurally representative</li>
 
 </ul>
 :::
@@ -928,19 +762,11 @@ sample_ahels(mraster = mr,
 
 # [🤲🤝🙏 Thank you!]{style="float:center;text-align:center;"} {background-color="#356734"}
 
-<center>
-
-Special thanks to the _*Canadian Wood Fibre Centre*_ for funding this research!
-
-</center>
+<center>Special thanks to the *Canadian Wood Fibre Centre* for funding this research!</center>
 
 ## 🤲🤝🙏 Thank you!
 
-<center>
-
-***🐤 [\@GoodbodyT](https://twitter.com/GoodbodyT)   🐤 [\@IRSS_UBC](https://twitter.com/IRSS_UBC)***
-
-</center>
+<center>***🐤 [\@GoodbodyT](https://twitter.com/GoodbodyT) 🐤 [\@IRSS_UBC](https://twitter.com/IRSS_UBC)***</center>
 
 <center>
 
