@@ -2,7 +2,7 @@
 title: "`sgsR` - Structurally Guided Sampling"
 author: "___Tristan Goodbody__, Nicholas Coops, Martin Queinnec, Joanne White, Piotr Tompalski, Andrew Hudak, David Auty, Ruben Valbuena, Antoine LeBoeuf, Ian Sinclair, Grant McCartney, Jean-Francois Prieur, Murray Woods_"
 institute: "__University of British Columbia__"
-date: "September 2^nd^, 2022 @ Berlin"
+date: 09/2/22
 format:
   revealjs: 
     self-contained: true
