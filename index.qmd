@@ -1,8 +1,10 @@
 ---
 title: "`sgsR` - Structurally Guided Sampling"
-author: "___Tristan Goodbody__, Nicholas Coops, Martin Queinnec, Joanne White, Piotr Tompalski, Andrew Hudak, David Auty, Ruben Valbuena, Antoine LeBoeuf, Ian Sinclair, Grant McCartney, Jean-Francois Prieur, Murray Woods_"
-institute: "__University of British Columbia__"
-date: 09/2/22
+author: "__Tristan Goodbody, PhD__"
+title-slide-attributes:
+  data-background-image: images/title_slide.jpg
+  data-background-opacity: "0.4"
+date: today
 format:
   revealjs: 
     self-contained: true
@@ -36,7 +38,184 @@ a <- system.file("extdata", "access.shp", package = "sgsR")
 access <- sf::st_read(a)
 ```
 
+## Overview {background-color="#356734"}
+
+-   About me
+
+    -   Background, skills, work experience, hobbies
+
+-   Brief inventory and sampling overview
+
+-   Discuss using auxiliary variables within sampling frameworks
+
+-   Structurally guided sampling using Airborne Laser Scanning
+
+-   **`sgsR`** overview
+
+-   Programmatic examples of the package
+
+# 🍁 About me
+
+::: columns
+::: column
+-   Born in Calgary, Alberta (Texas of Canada)
+
+-   Lived in Quito, ECU, Kuala Lumpur, MYS, Aberdeen, SCO
+
+-   Studied Natural Resources Conservation at UBC
+
+-   Worked as a forest engineer in Chetwynd and Williams Lake, BC
+
+-   10 years experience in remote sensing, forest management
+:::
+
+::: column
+![](images/tristan.png){fig-align="center" width="60%"}
+:::
+:::
+
+# [👷🛠️🌳Skills and Work Experience]{style="float:center;text-align:center;"} {background-color="#356734"}
+
+## Forest Carbon Due‑Diligence
+
+-   Additionality, baselines, durability, and co‑benefits for removal/reduction carbon projects
+-   Conducted due‑diligence on over 20 nature‑based carbon projects (e.g. Climate Action Reserve Mexico, Verra, Cercarbono)\
+
+## Technical Communication
+
+-   Bridging scientific / strategic concepts with practical applications
+-   Interfaced science, and software teams to integrate scalable, high quality products
+-   Acted as technical expert for client meeting to communicate remote sensing approaches
+
+## Mentorship
+
+-   Startup and academic experience in developing and promoting best‑practices
+-   Scientific mentorship of graduate students, industry/government professionals
+-   Lead team sessions on remote sensing approaches, promoting simplicity and reducing risk
+-   Developed interactive documentation to develop internal remote sensing / carbon assessment  capacity
+-   Onboarded new staff using self-made materials
+
+## Data Management & Expertise
+
+-   Lidar, satellite, airborne, drone, field‑measured, GIS data
+-   Lead over 20 projects leading to high-quality scientific publication
+-   Focus on operationalization - using remote sensing to make forest management more efficient and objective
+-   Designed, implemented, and applied processing workflows for government and industrial partners (e.g. BC lidar)
+
+## Geospatial Analysis & Computing
+-   Familiar with R and Python
+-   Statistical modelling and workflow optimization (e.g. timber attribute modelling, classifications)
+-   Open-source software development
+-   Forest Inventory Innovation
+    -   Mapping, mensuration, and biometric approaches to achieve strategic and operational goals
+
+## Field Work
+-   Forest regeneration assessments
+-   Timber cruising
+-   Harvest Layout
+-   Insect/Avian surveys
+-   Seasoned Bear Spray User
+
+## Languages
+-   Spanish (intermediate)
+-   German (basic)
+-   Mandarin (basic)
+ 
+## Core Work Experience
+
+-   Developed Python packages to automate remote sensing workflows, analytics and carbon evaluation
+
+-   Lead US federal grant writing efforts (\$10M & \$1.9M)
+
+
+
+
+
+## 🐕 🥑 Hobbies
+
+::: columns
+::: {.column width="30%"}
+-   Dog Training
+
+-   Photography
+
+-   Travel (... Food!)
+
+-   Running 🤔
+:::
+
+::: {.column width="70%"}
+![](images/kyra.jpg){fig-align="center"}
+:::
+:::
+
+#  {background-image="images/thetis.jpg"}
+
+#  {background-image="images/cometa.jpg"}
+
+#  {background-image="images/hike.jpg"}
+
+## Graduate School
+
+::: columns
+::: column
+-   Remote Sensing (lidar, DAP, optical)
+
+-   Industry / government operationalization
+
+-   Peer-reviewed publications (h-index: 20)
+
+-   Open-source Software development (e.g. `sgsR`, `lidR`)
+
+-   Mentorship (academia, industry, government)
+:::
+
+::: column
+![](images/pointcloud.jpg){fig-align="center"}
+:::
+:::
+
+## PhD Research
+
+![](images/thesis.jpg){fig-align="center"}
+
+::: {.fragment .fade-up}
+<center>🏆 Best National PhD Thesis</center>
+
+<center>🏆 Faculty of Forestry (UBC) Best PhD Thesis</center>
+:::
+
+## Chapter 5 - Forest Regeneration
+
+![](images/regen.png){fig-align="center"}
+
+::: {.fragment .fade-up}
+<center>Does plot placement make sense?</center>
+:::
+
+## Post-Doctoral Research
+
+::: columns
+::: {.column width="40%"}
+-   Data-driven, salable, representative inventories
+
+-   Use best-available forest structure data
+
+-   Reduce sampling intensity, cost
+
+-   Flexible to user needs
+:::
+
+::: {.column width="60%"}
+![](images/paper.jpg)
+:::
+:::
+
+# [🌲🌳 Structurally Guided Sampling]{style="float:center;text-align:center;"} {background-color="#356734"}
+
 ## Take-away message <i class="fa-brands fa-r-project" style="height:120px;vertical-align:middle;"></i> <img src="images/logo.png" height="120px" style="vertical-align:middle;"/> {.smaller}
+
+-   Need flexible, scalable, open-source approaches for ensuring representative sampling frameworks
 
 -   **`sgsR`** - R-package for *structurally guided sampling* for enhanced forest inventories.
 
@@ -53,21 +232,9 @@ access <- sf::st_read(a)
 
 <li><i class="fa-solid fa-bowl-food"></i>Funded by the **Canadian Wood Fibre Centre, Canadian Forest Service**</li>
 
+<li><i class="fa-solid fa-bowl-food"></i>Operationalized on \>20M ha of forest in Canada (Government, Industry)</li>
+
 </ul>
-:::
-
-## Overview {background-color="#356734"}
-
-::: incremental
--   Brief inventory and sampling overview
-
--   Discuss using auxiliary variables within sampling frameworks
-
--   Structurally guided sampling using Airborne Laser Scanning
-
--   **`sgsR`** overview
-
--   Programmatic examples of the package
 :::
 
 # [🌲🌳 Forest inventories]{style="float:center;text-align:center;"} {background-color="#356734"}
@@ -105,7 +272,7 @@ access <- sf::st_read(a)
 :::
 
 ::: {.fragment .fade-up}
--   Sampling drives accurate forest attribute estimates (e.g. forest area, stem volume)
+-   Sampling drives accurate forest attribute estimates (e.g. carbon content, forest area, stem volume)
 :::
 
 ::: {.fragment .fade-up}
@@ -193,7 +360,7 @@ sample_systematic(raster = mr, cellsize = 1000,
 
 <li><i class="fa-solid fa-bullseye"></i>Randomized</li>
 
-<li><i class="fa-brands fa-github"></i>Sampling unit probabilities is equal, known, or can be known</li>
+<li><i class="fa-brands fa-github"></i>Sampling unit probabilities are equal, known, or can be known</li>
 
 <li><i class="fa-brands fa-github"></i>Different methods exist *(e.g. simple random, systematic)*</li>
 
@@ -382,11 +549,11 @@ sample_strat(sraster = sraster, nSamp = 100,mindist = 200, plot = TRUE)
 ## [Example 1]{.story} 🌱 Stratified sampling constrained by access
 
 ::: incremental
+-   Imagine you are a project developer who wants to accurately estimate their carbon stocks
 
--   Imagine you are a forester who needs some *new* plots
+-   
 
 -   You love the idea of sgsR and want to use it
-
 :::
 
 ::: {.fragment .fade-up}
@@ -639,9 +806,9 @@ existing <- sample_srs(raster = mr, nSamp = 50, plot = TRUE)
 
 <li><i class="fa-brands fa-github"></i>Determine representation of `existing` sample</li>
 
-<li><i class="fa-brands fa-github"></i>Generate quantile and covariance matrix of ALS metrics</li>
+<li><i class="fa-brands fa-github"></i>Generate quantile and covariance matrices of ALS metrics</li>
 
-<li><i class="fa-brands fa-github"></i>Determining number of additional samples that can / need to be added</li>
+<li><i class="fa-brands fa-github"></i>Determine number of additional samples that can / need to be added</li>
 
 <li><i class="fa-brands fa-github"></i>Identify where new samples are needed to balance quantile density and sampling density</li>
 
@@ -800,13 +967,7 @@ sample_ahels(mraster = mr,
 
 ## 🤲🤝🙏 Thank you!
 
-![](images/affiliations.png)
-
-## 🌲👀 See for yourself!
-
-![](images/scanme.png){fig-align="center" width="610"}
-
-## Additional resources
+![](images/affiliations.png) \## Additional resources
 
 This presentation was made with [Quarto](https://quarto.org/) and will be made available on Github following the presentation at ForestSAT\
 
