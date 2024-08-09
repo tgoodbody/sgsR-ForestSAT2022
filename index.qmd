@@ -88,6 +88,8 @@ https://strawpoll.com/PKgle3Gb9Zp
 https://maps.app.goo.gl/ibA2voXQf6fZKUgf9
 :::
 
+# {background-image="images/max.jpg"}
+
 ## 🐕 🥑 Hobbies
 
 ::: columns
