@@ -1,5 +1,7 @@
 ---
-title: "`sgsR` - Structurally Guided Sampling"
+title: |
+   | About Me &
+   | `sgsR` - Structurally Guided Sampling
 author: "__Tristan Goodbody, PhD__"
 title-slide-attributes:
   data-background-image: images/title_slide.jpg
@@ -42,8 +44,6 @@ access <- sf::st_read(a)
 
 -   About me
 
-    -   Background, skills, work experience, hobbies
-
 -   Brief inventory and sampling overview
 
 -   Discuss using auxiliary variables within sampling frameworks
@@ -54,15 +54,21 @@ access <- sf::st_read(a)
 
 -   Programmatic examples of the package
 
-# 🍁 About me
+# About You!
+
+![](images/meme.png){fig-align="center"}
+
+# 🍁 About me {.smaller}
 
 ::: columns
 ::: column
--   Born in Calgary, Alberta (Texas of Canada)
+-   Born in Calgary, Alberta
 
--   Lived in Quito, ECU, Kuala Lumpur, MYS, Aberdeen, SCO
+-   Currently in Vancouver, CA
 
--   Studied Natural Resources Conservation at UBC
+-   Lived in Quito ECU, Kuala Lumpur MYS, Aberdeen SCO
+
+-   Studied Natural Resources Conservation at UBC (2010-2015)
 
 -   Worked as a forest engineer in Chetwynd and Williams Lake, BC
 
@@ -73,63 +79,6 @@ access <- sf::st_read(a)
 ![](images/tristan.png){fig-align="center" width="60%"}
 :::
 :::
-
-# [👷🛠️🌳Skills and Work Experience]{style="float:center;text-align:center;"} {background-color="#356734"}
-
-## Forest Carbon Due‑Diligence
-
--   Additionality, baselines, durability, and co‑benefits for removal/reduction carbon projects
--   Conducted due‑diligence on over 20 nature‑based carbon projects (e.g. Climate Action Reserve Mexico, Verra, Cercarbono)\
-
-## Technical Communication
-
--   Bridging scientific / strategic concepts with practical applications
--   Interfaced science, and software teams to integrate scalable, high quality products
--   Acted as technical expert for client meeting to communicate remote sensing approaches
-
-## Mentorship
-
--   Startup and academic experience in developing and promoting best‑practices
--   Scientific mentorship of graduate students, industry/government professionals
--   Lead team sessions on remote sensing approaches, promoting simplicity and reducing risk
--   Developed interactive documentation to develop internal remote sensing / carbon assessment  capacity
--   Onboarded new staff using self-made materials
-
-## Data Management & Expertise
-
--   Lidar, satellite, airborne, drone, field‑measured, GIS data
--   Lead over 20 projects leading to high-quality scientific publication
--   Focus on operationalization - using remote sensing to make forest management more efficient and objective
--   Designed, implemented, and applied processing workflows for government and industrial partners (e.g. BC lidar)
-
-## Geospatial Analysis & Computing
--   Familiar with R and Python
--   Statistical modelling and workflow optimization (e.g. timber attribute modelling, classifications)
--   Open-source software development
--   Forest Inventory Innovation
-    -   Mapping, mensuration, and biometric approaches to achieve strategic and operational goals
-
-## Field Work
--   Forest regeneration assessments
--   Timber cruising
--   Harvest Layout
--   Insect/Avian surveys
--   Seasoned Bear Spray User
-
-## Languages
--   Spanish (intermediate)
--   German (basic)
--   Mandarin (basic)
- 
-## Core Work Experience
-
--   Developed Python packages to automate remote sensing workflows, analytics and carbon evaluation
-
--   Lead US federal grant writing efforts (\$10M & \$1.9M)
-
-
-
-
 
 ## 🐕 🥑 Hobbies
 
@@ -145,32 +94,86 @@ access <- sf::st_read(a)
 :::
 
 ::: {.column width="70%"}
-![](images/kyra.jpg){fig-align="center"}
+![Kyra at Brandywine Meadows](images/kyra.jpg){fig-align="center"}
 :::
 :::
 
 #  {background-image="images/thetis.jpg"}
 
-#  {background-image="images/cometa.jpg"}
-
 #  {background-image="images/hike.jpg"}
 
-## Graduate School
+# [👷🛠️🌳Skills and Work Experience]{style="float:center;text-align:center;"} {background-color="#356734"}
 
+## Forest Carbon Due Diligence {background-image="images/forest.jpg" background-opacity="15%"}
+
+-   Ex-ante & ex-post projects (e.g. Climate Action Reserve Mexico, Verra, Cercarbono)
+-   Additionality, durability, and co‑benefits for removal/reduction/avoidance projects
+-   Sattelite-based dynamic baseline comparisons
+-   Methodology red flag reviews
+
+## Technical Communication {background-image="images/forest2.jpg" background-opacity="15%"}
+
+-   Bridging scientific / strategic concepts with practical applications (colleagues & clients)
+-   Interfacing teams to high quality, scalable GIS integration
+-   Peer-reviewed academic publishing with wide-ranging uptake (\>30 publications)
+-   US federal grant writing efforts (USDA \$10M & \$1.9M)
+
+## Mentorship {background-image="images/forest3.jpg" background-opacity="15%"}
+
+-   Onboarding & supporting implementation of efficient analytical pipelines
+-   Tech-transfer for industry/government professionals, graduate students
+-   Leading workshops on remote sensing data, approaches, technical workflows
+
+## Data Management & Expertise {background-image="images/forest4.jpg" background-opacity="15%"}
+
+-   Lidar, satellite, airborne, drone, field‑measured, GIS data
+-   Operationalization - remote sensing to realize forest management efficiencies
+-   Designed, implemented, and applied processing workflows for government and industrial partners (e.g. BC lidar)
+
+## Geospatial Analysis & Computing {background-image="images/forest5.jpg" background-opacity="15%"}
+
+-   R and Python automation of remote sensing workflows, analytics and carbon evaluation
+-   Open-source software development and package maintenance (`sgsR`)
+-   Statistical modelling (e.g. timber attribute modelling, classifications)
+
+::: {.fragment .fade-up}
+::: callout-important
+# Words to live by
+**"For every hour you spend coding, you will spend 2 hours documenting"** - Jean-Romain Roussell
+:::
+:::
+
+## Field Work {background-image="images/title_slide.jpg" background-opacity="15%"}
+
+-   Forest regeneration assessments
+-   Timber cruising
+-   Harvest layout
+-   Insect/Avian surveys
+-   Seasoned bear spray user 🐻
+
+## Languages {background-image="images/forest.jpg" background-opacity="15%"}
+
+-   Spanish (intermediate)
+-   German (basic)
+-   Mandarin (currently learning)
+
+# [🧑🏼‍🎓🖥️🛰️Graduate School]{style="float:center;text-align:center;"} {background-color="#356734"}
+
+# Graduate School (MSc -> PhD)
 ::: columns
-::: column
+::: {.column width="60%"}
 -   Remote Sensing (lidar, DAP, optical)
 
 -   Industry / government operationalization
 
 -   Peer-reviewed publications (h-index: 20)
 
--   Open-source Software development (e.g. `sgsR`, `lidR`)
-
 -   Mentorship (academia, industry, government)
+
+-   International conferences, workshops, collaborations
 :::
 
-::: column
+::: {.column width="40%"}
 ![](images/pointcloud.jpg){fig-align="center"}
 :::
 :::
@@ -180,9 +183,9 @@ access <- sf::st_read(a)
 ![](images/thesis.jpg){fig-align="center"}
 
 ::: {.fragment .fade-up}
-<center>🏆 Best National PhD Thesis</center>
+<center>🏆 Best National PhD Thesis (Canadian Remote Sensing Society)</center>
 
-<center>🏆 Faculty of Forestry (UBC) Best PhD Thesis</center>
+<center>🏆 Best PhD Thesis (UBC Faculty of Forestry)</center>
 :::
 
 ## Chapter 5 - Forest Regeneration
@@ -190,32 +193,38 @@ access <- sf::st_read(a)
 ![](images/regen.png){fig-align="center"}
 
 ::: {.fragment .fade-up}
+<bold>
+
 <center>Does plot placement make sense?</center>
+
+</bold>
 :::
 
 ## Post-Doctoral Research
 
 ::: columns
-::: {.column width="40%"}
--   Data-driven, salable, representative inventories
+::: {.column width="50%"}
+-   Need data-driven, scalable, representative field inventories
 
--   Use best-available forest structure data
+-   Inventories are out-of-date
 
--   Reduce sampling intensity, cost
+-   Integrate best-available forest structure data
+
+-   **Reduce sampling intensity, cost**
 
 -   Flexible to user needs
+
+-   International & interdiciplinary collaboration
 :::
 
-::: {.column width="60%"}
-![](images/paper.jpg)
+::: {.column width="50%"}
+![](images/paper.jpg){width="80%"}
 :::
 :::
 
-# [🌲🌳 Structurally Guided Sampling]{style="float:center;text-align:center;"} {background-color="#356734"}
+# [🌲🎯 Structurally Guided Sampling]{style="float:center;text-align:center;"} {background-color="#356734"}
 
 ## Take-away message <i class="fa-brands fa-r-project" style="height:120px;vertical-align:middle;"></i> <img src="images/logo.png" height="120px" style="vertical-align:middle;"/> {.smaller}
-
--   Need flexible, scalable, open-source approaches for ensuring representative sampling frameworks
 
 -   **`sgsR`** - R-package for *structurally guided sampling* for enhanced forest inventories.
 
@@ -251,9 +260,9 @@ access <- sf::st_read(a)
 ::: info-box
 <ul>
 
-<li><i class="fa-solid fa-bullseye"></i>Who/what is the information for? (e.g. Reporting obligations, timber production)</li>
+<li><i class="fa-solid fa-bullseye"></i>Who/what is the information for? (e.g. Reporting obligations, baseline assumptions)</li>
 
-<li><i class="fa-brands fa-github"></i>How big of an area are we inventorying? (e.g. National level, operational level)</li>
+<li><i class="fa-brands fa-github"></i>How big of an area are we inventorying? (e.g. National level, operational level (project))</li>
 
 </ul>
 :::
@@ -269,6 +278,7 @@ access <- sf::st_read(a)
 
 ::: {.fragment .fade-up}
 <center>***Mensuration is a cornerstone of forest management***</center>
+
 :::
 
 ::: {.fragment .fade-up}
@@ -277,7 +287,7 @@ access <- sf::st_read(a)
 
 ::: {.fragment .fade-up}
 ::: info-box
-Sampling can be:
+**Challenges**
 
 <ul>
 
@@ -285,15 +295,17 @@ Sampling can be:
 
 <li><i class="fa-brands fa-github"></i>Logistically challenging</li>
 
-<li><i class="fa-brands fa-github"></i>**Expensive**</li>
+<li><i class="fa-brands fa-github"></i>**Expensive!!!**</li>
 
 </ul>
+
 :::
 :::
 
-::: {.fragment .fade-up}
--   We want to balance these challenges with attribute estimate accuracy
-:::
+<!-- ::: {.fragment .fade-up}
+<center> Need to balance these constraints with attribute estimate accuracy <center>
+
+::: -->
 
 # [🎲📊 Traditional sampling approaches]{style="float:center;text-align:center;"} {background-color="#356734"}
 
@@ -352,23 +364,10 @@ sample_systematic(raster = mr, cellsize = 1000,
 
 ## 🎲📊 Traditional sampling approaches
 
--   We now understand a bit more about probability-based sampling:
-
-::: {.fragment .fade-up}
-::: info-box
-<ul>
-
-<li><i class="fa-solid fa-bullseye"></i>Randomized</li>
-
-<li><i class="fa-brands fa-github"></i>Sampling unit probabilities are equal, known, or can be known</li>
-
-<li><i class="fa-brands fa-github"></i>Different methods exist *(e.g. simple random, systematic)*</li>
-
-</ul>
-:::
-:::
+-   These methods are
 
 ::: incremental
+::: info-box
 -   Time-tested
 
 -   Simple
@@ -376,13 +375,16 @@ sample_systematic(raster = mr, cellsize = 1000,
 -   Efficient
 
 -   Broadly used
+
+-   Probabilistic
+:::
 :::
 
-# [❓ <br> **What can we do to improve sampling efficiency and attribute estimate accuracy** </br> ❓]{style="float:center;text-align:center;"} {background-color="#ddbc76"}
+# [❓ <br> **How can we improve sampling efficiency, estimate accuracy, cost, logistics?** </br> ❓]{style="float:center;text-align:center;"} {background-color="#ddbc76"}
 
 # [🛰👩🏻‍💻 Auxiliary data]{style="float:center;text-align:center;"} {background-color="#356734"}
 
-## 👩🏻‍💻 Auxiliary data
+## 👩🏻‍💻 Remotely Sensed Data
 
 -   Empirical distributions that are spatially explicit
 
@@ -397,15 +399,16 @@ sample_systematic(raster = mr, cellsize = 1000,
 <li><i class="fa-brands fa-github"></i>ALS metrics *(height, cover, variability)*</li>
 
 </ul>
+
 :::
 :::
 
 ::: {.fragment .fade-up}
-✔️ Understand inventory attributes of interest
+✔️ Understand inventory attributes of interest (e.g. Carbon Density)
 :::
 
 ::: {.fragment .fade-up}
-✔️ Associate auxiliary data correlated to those attributes
+✔️ Associate auxiliary data correlated to those attributes (e.g. lidar heights & variability)
 :::
 
 ::: {.fragment .fade-up}
@@ -551,13 +554,11 @@ sample_strat(sraster = sraster, nSamp = 100,mindist = 200, plot = TRUE)
 ::: incremental
 -   Imagine you are a project developer who wants to accurately estimate their carbon stocks
 
--   
+-   You need to establish a field inventory, but want to balance cost with estimation precision
 
--   You love the idea of sgsR and want to use it
-:::
+-   You want to maximize sample unit count (number of plots) by sampling around access corridors (roads)
 
-::: {.fragment .fade-up}
-![](images/rik.jpeg){fig-align="center"}
+-   You know someone who can leverage remote sensing data (... its me!)
 :::
 
 ## [Example 1]{.story} 🌱 Stratified sampling constrained by access
