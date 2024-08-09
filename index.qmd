@@ -1,6 +1,6 @@
 ---
 title: |
-   | About Me &
+   | My Career Journey &
    | `sgsR` - Structurally Guided Sampling
 author: "__Tristan Goodbody, PhD__"
 title-slide-attributes:
@@ -58,6 +58,10 @@ access <- sf::st_read(a)
 
 ![](images/meme.png){fig-align="center"}
 
+::: {.notes}
+https://strawpoll.com/PKgle3Gb9Zp
+:::
+
 # 🍁 About me {.smaller}
 
 ::: columns
@@ -70,7 +74,7 @@ access <- sf::st_read(a)
 
 -   Studied Natural Resources Conservation at UBC (2010-2015)
 
--   Worked as a forest engineer in Chetwynd and Williams Lake, BC
+-   Worked as a planning forester in Chetwynd and Williams Lake, BC
 
 -   10 years experience in remote sensing, forest management
 :::
@@ -80,6 +84,10 @@ access <- sf::st_read(a)
 :::
 :::
 
+::: {.notes}
+https://maps.app.goo.gl/ibA2voXQf6fZKUgf9
+:::
+
 ## 🐕 🥑 Hobbies
 
 ::: columns
@@ -87,6 +95,8 @@ access <- sf::st_read(a)
 -   Dog Training
 
 -   Photography
+
+-   Languages
 
 -   Travel (... Food!)
 
@@ -102,64 +112,9 @@ access <- sf::st_read(a)
 
 #  {background-image="images/hike.jpg"}
 
-# [👷🛠️🌳Skills and Work Experience]{style="float:center;text-align:center;"} {background-color="#356734"}
-
-## Forest Carbon Due Diligence {background-image="images/forest.jpg" background-opacity="15%"}
-
--   Ex-ante & ex-post projects (e.g. Climate Action Reserve Mexico, Verra, Cercarbono)
--   Additionality, durability, and co‑benefits for removal/reduction/avoidance projects
--   Sattelite-based dynamic baseline comparisons
--   Methodology red flag reviews
-
-## Technical Communication {background-image="images/forest2.jpg" background-opacity="15%"}
-
--   Bridging scientific / strategic concepts with practical applications (colleagues & clients)
--   Interfacing teams to high quality, scalable GIS integration
--   Peer-reviewed academic publishing with wide-ranging uptake (\>30 publications)
--   US federal grant writing efforts (USDA \$10M & \$1.9M)
-
-## Mentorship {background-image="images/forest3.jpg" background-opacity="15%"}
-
--   Onboarding & supporting implementation of efficient analytical pipelines
--   Tech-transfer for industry/government professionals, graduate students
--   Leading workshops on remote sensing data, approaches, technical workflows
-
-## Data Management & Expertise {background-image="images/forest4.jpg" background-opacity="15%"}
-
--   Lidar, satellite, airborne, drone, field‑measured, GIS data
--   Operationalization - remote sensing to realize forest management efficiencies
--   Designed, implemented, and applied processing workflows for government and industrial partners (e.g. BC lidar)
-
-## Geospatial Analysis & Computing {background-image="images/forest5.jpg" background-opacity="15%"}
-
--   R and Python automation of remote sensing workflows, analytics and carbon evaluation
--   Open-source software development and package maintenance (`sgsR`)
--   Statistical modelling (e.g. timber attribute modelling, classifications)
-
-::: {.fragment .fade-up}
-::: callout-important
-# Words to live by
-**"For every hour you spend coding, you will spend 2 hours documenting"** - Jean-Romain Roussell
-:::
-:::
-
-## Field Work {background-image="images/title_slide.jpg" background-opacity="15%"}
-
--   Forest regeneration assessments
--   Timber cruising
--   Harvest layout
--   Insect/Avian surveys
--   Seasoned bear spray user 🐻
-
-## Languages {background-image="images/forest.jpg" background-opacity="15%"}
-
--   Spanish (intermediate)
--   German (basic)
--   Mandarin (currently learning)
-
 # [🧑🏼‍🎓🖥️🛰️Graduate School]{style="float:center;text-align:center;"} {background-color="#356734"}
 
-# Graduate School (MSc -> PhD)
+<!-- # Graduate School (MSc -> PhD)
 ::: columns
 ::: {.column width="60%"}
 -   Remote Sensing (lidar, DAP, optical)
@@ -176,14 +131,14 @@ access <- sf::st_read(a)
 ::: {.column width="40%"}
 ![](images/pointcloud.jpg){fig-align="center"}
 :::
-:::
+::: -->
 
 ## PhD Research
 
 ![](images/thesis.jpg){fig-align="center"}
 
 ::: {.fragment .fade-up}
-<center>🏆 Best National PhD Thesis (Canadian Remote Sensing Society)</center>
+<center>🏆 National Best PhD Thesis (Canadian Remote Sensing Society)</center>
 
 <center>🏆 Best PhD Thesis (UBC Faculty of Forestry)</center>
 :::
@@ -200,25 +155,122 @@ access <- sf::st_read(a)
 </bold>
 :::
 
+# 
+
+![](images/regen.gif){fig-align="center"}
+
+::: {.notes}
+https://www.tandfonline.com/doi/abs/10.1080/01431161.2017.1402387
+:::
+
 ## Post-Doctoral Research
 
 ::: columns
 ::: {.column width="50%"}
--   Need data-driven, scalable, representative field inventories
+-   Spatial statistics & data‑driven sampling optimization routines
 
--   Inventories are out-of-date
+-   Domestic \& international collaborations: academia, government, and private industry
 
--   Integrate best-available forest structure data
+-   Open‑source software development
 
--   **Reduce sampling intensity, cost**
+-   Bespoke lidar processing and analys
 
--   Flexible to user needs
-
--   International & interdiciplinary collaboration
+-   Mentored students, professionals in remote sensing, data analysis, and scientific communication
 :::
 
 ::: {.column width="50%"}
 ![](images/paper.jpg){width="80%"}
+:::
+:::
+
+::: {.notes}
+https://academic.oup.com/forestry/article/96/4/411/7026211?login=false
+:::
+
+# [👷🛠️🌳Skills and Work Experience]{style="float:center;text-align:center;"} {background-color="#356734"}
+
+## Forest Carbon Due Diligence (Renoster) {background-image="images/forest.jpg" background-opacity="15%"}
+
+-   Ex-ante & ex-post projects (e.g. Climate Action Reserve Mexico, Verra, Cercarbono)
+-   Additionality, durability, and co‑benefits for removal/reduction/avoidance projects
+-   Sattelite-based dynamic baseline comparisons
+-   Methodology red flag reviews
+
+## Technical Communication {background-image="images/forest2.jpg" background-opacity="15%"}
+
+-   Bridging scientific / strategic concepts with practical applications (colleagues & clients)
+-   Interfacing teams to high quality, scalable GIS integration
+-   Peer-reviewed academic publishing with wide-ranging uptake (\>30 publications)
+-   US federal grant writing efforts (USDA \$10M & \$1.9M)
+
+## Mentorship {background-image="images/forest3.jpg" background-opacity="15%"}
+
+-   Supporting implementation of efficient analytical pipelines
+-   Tech-transfer (Quarto, processing efficiencies, scientific writing)
+-   Onboarded new staff (technical workflows, company frameworks etc.)
+
+## Data Management & Expertise {background-image="images/forest4.jpg" background-opacity="15%"}
+
+-   Lidar, satellite, airborne, drone, field‑measured, GIS data
+-   Operationalization - remote sensing to realize forest management efficiencies
+-   Designed, implemented, and applied processing workflows for government and industrial partners (e.g. BC lidar)
+
+## Geospatial Analysis & Computing {background-image="images/forest5.jpg" background-opacity="15%"}
+
+-   R and Python automation of remote sensing workflows, analytics and carbon evaluation
+-   Open-source software development and package maintenance (`sgsR`, Renoster Python Packages)
+-   Analysis -> Insights (Statistical modelling, data compilation & visualization, standardization)
+
+::: {.fragment .fade-up}
+::: callout-important
+# Words to live by
+**"For every hour you spend coding, you will spend 2 hours documenting"** - Jean-Romain Roussell
+:::
+:::
+
+## Field Work {background-image="images/title_slide.jpg" background-opacity="15%"}
+
+::: columns
+::: {.column width="40%"}
+-   Forest regeneration assessments
+-   Timber cruising
+-   Harvest layout
+-   Insect/Avian surveys
+-   Fire salvage
+-   Seasoned bear spray user 🐻
+:::
+
+::: {.column width="60%"}
+![](images/forest6.jpg){fig-align="center"}
+:::
+:::
+
+#
+
+![](images/fieldwork.jpg){fig-align="center"}
+
+# Lessons Learned {background-image="images/forest2.jpg" background-opacity="15%"}
+
+::: columns
+::: {.column width="50%"}
+**Challenges**
+
+-   Huge areas 
+
+-   Inventories out-of-date
+
+-   High-cost, logistics
+:::
+
+::: {.column width="50%"}
+**Directives**
+
+-   Use best-available forest structure data (e.g. lidar, DAP)
+
+-   Needs to be data-driven, scalable
+
+-   Flexible to varied inventory objectives
+
 :::
 :::
 
@@ -244,6 +296,10 @@ access <- sf::st_read(a)
 <li><i class="fa-solid fa-bowl-food"></i>Operationalized on \>20M ha of forest in Canada (Government, Industry)</li>
 
 </ul>
+:::
+
+::: {.notes}
+https://tgoodbody.github.io/sgsR/
 :::
 
 # [🌲🌳 Forest inventories]{style="float:center;text-align:center;"} {background-color="#356734"}
@@ -276,16 +332,10 @@ access <- sf::st_read(a)
 
 ## 🚩 Sampling
 
-::: {.fragment .fade-up}
 <center>***Mensuration is a cornerstone of forest management***</center>
 
-:::
-
-::: {.fragment .fade-up}
 -   Sampling drives accurate forest attribute estimates (e.g. carbon content, forest area, stem volume)
-:::
 
-::: {.fragment .fade-up}
 ::: info-box
 **Challenges**
 
@@ -300,7 +350,7 @@ access <- sf::st_read(a)
 </ul>
 
 :::
-:::
+
 
 <!-- ::: {.fragment .fade-up}
 <center> Need to balance these constraints with attribute estimate accuracy <center>
@@ -364,9 +414,8 @@ sample_systematic(raster = mr, cellsize = 1000,
 
 ## 🎲📊 Traditional sampling approaches
 
--   These methods are
+These methods are:
 
-::: incremental
 ::: info-box
 -   Time-tested
 
@@ -378,7 +427,7 @@ sample_systematic(raster = mr, cellsize = 1000,
 
 -   Probabilistic
 :::
-:::
+
 
 # [❓ <br> **How can we improve sampling efficiency, estimate accuracy, cost, logistics?** </br> ❓]{style="float:center;text-align:center;"} {background-color="#ddbc76"}
 
@@ -386,9 +435,8 @@ sample_systematic(raster = mr, cellsize = 1000,
 
 ## 👩🏻‍💻 Remotely Sensed Data
 
--   Empirical distributions that are spatially explicit
+Need empirical distributions that are spatially explicit
 
-::: {.fragment .fade-up}
 ::: info-box
 <ul>
 
@@ -401,10 +449,9 @@ sample_systematic(raster = mr, cellsize = 1000,
 </ul>
 
 :::
-:::
 
 ::: {.fragment .fade-up}
-✔️ Understand inventory attributes of interest (e.g. Carbon Density)
+✔️ Understand inventory attributes of interest (e.g. carbon density)
 :::
 
 ::: {.fragment .fade-up}
@@ -467,7 +514,7 @@ sraster <- strat_quantiles(mraster = mr[[c(1,3)]], # p90
 
 ## 💠🔢 Stratification - [2]{.circle} metrics {auto-animate="true"}
 
-``` {.r code-line-numbers="2:3"}
+``` {.r code-line-numbers="2-3"}
 #--- perform dual metric stratification ---#
 sraster <- strat_quantiles(mraster = mr[[c(1,3)]], # p90 & zsd
                            nStrata = list(10,3))
@@ -490,7 +537,7 @@ sraster <- strat_quantiles(mraster = mr$zq90, # p90
                            nStrata = 10)
 
 #--- structurally guided stratified sampling ---#
-sample_strat(sraster = sraster, nSamp = 100,mindist = 200, plot = TRUE)
+sample_strat(sraster = sraster, nSamp = 100, mindist = 200, plot = TRUE)
 ```
 
 # [`sgsR`]{style="float:center;text-align:center;"} {background-color="#356734"}
@@ -510,20 +557,19 @@ sample_strat(sraster = sraster, nSamp = 100,mindist = 200, plot = TRUE)
 
 <li><i class="fa-solid fa-bullseye"></i>Tuneable</li>
 
-<li><i class="fa-solid fa-bullseye"></i>Spatially-explicit</li>
+<li><i class="fa-solid fa-bullseye"></i>Spatially explicit</li>
+
+<li><i class="fa-solid fa-bullseye"></i>Scalable</li>
 
 </ul>
 :::
 
 ## Algorithm structure <i class="fa-brands fa-r-project" style="height:120px;vertical-align:middle;"></i> <img src="images/logo.png" height="120px" style="vertical-align:middle;"/> {.smaller}
 
-::: incremental
 -   **`sgsR`** was built using the `terra`, `sf`, & `tidyverse` packages
 
 -   There are 4 primary function verbs that **`sgsR`** uses:
-:::
 
-::: {.fragment .fade-up}
 ::: info-box
 <ul>
 
@@ -537,23 +583,20 @@ sample_strat(sraster = sraster, nSamp = 100,mindist = 200, plot = TRUE)
 
 </ul>
 :::
-:::
 
-::: {.fragment .fade-up}
 ![](images/flow-01.png){fig-align="center" width="655"}
-:::
 
 ##  {background-color="#356734"}
 
 ![](images/flow.png){fig-align="center"}
 
-# [Example 1]{.story} 🌱 [Stratified sampling constrained by access]{style="float:right;text-align:right;"} {background-color="#356734"}
+# [Example]{.story} 🌱 [Stratified sampling constrained by access]{style="float:right;text-align:right;"} {background-color="#356734"}
 
-## [Example 1]{.story} 🌱 Stratified sampling constrained by access
+## [Example]{.story} 🌱 Stratified sampling constrained by access
 
-::: incremental
 -   Imagine you are a project developer who wants to accurately estimate their carbon stocks
 
+::: incremental
 -   You need to establish a field inventory, but want to balance cost with estimation precision
 
 -   You want to maximize sample unit count (number of plots) by sampling around access corridors (roads)
@@ -561,7 +604,7 @@ sample_strat(sraster = sraster, nSamp = 100,mindist = 200, plot = TRUE)
 -   You know someone who can leverage remote sensing data (... its me!)
 :::
 
-## [Example 1]{.story} 🌱 Stratified sampling constrained by access
+## [Example]{.story} 🌱 Stratified sampling constrained by access
 
 1️⃣ Read in some ALS metrics
 
@@ -574,7 +617,7 @@ r <- system.file("extdata", "mraster.tif", package = "sgsR")
 mraster <- terra::rast(r)
 ```
 
-## [Example 1]{.story} 🌱 Stratified sampling constrained by access
+## [Example]{.story} 🌱 Stratified sampling constrained by access
 
 1️⃣ Read in some ALS metrics
 
@@ -595,7 +638,7 @@ mraster <- terra::rast(r)
 terra::plot(mr$zq90, main = "p90")
 ```
 
-## [Example 1]{.story} 🌱 Stratified sampling constrained by access {auto-animate="true"}
+## [Example]{.story} 🌱 Stratified sampling constrained by access {auto-animate="true"}
 
 2️⃣ Read in a linear road `access` network
 
@@ -616,7 +659,7 @@ terra::plot(mr$zq90, main = "p90 with road access")
 plot(access, add = TRUE, col = "black")
 ```
 
-## [Example 1]{.story} 🌱 Stratified sampling constrained by access {auto-animate="true"}
+## [Example]{.story} 🌱 Stratified sampling constrained by access {auto-animate="true"}
 
 3️⃣ Stratify `p90` in to 4 strata based on quantiles
 
@@ -636,7 +679,7 @@ sraster <- strat_quantiles(mraster = mr$zq90, # input ALS metric - p90
                            nStrata = 4, plot = TRUE) # desired number of strata (4)
 ```
 
-## [Example 1]{.story} 🌱 Stratified sampling constrained by access {auto-animate="true"}
+## [Example]{.story} 🌱 Stratified sampling constrained by access {auto-animate="true"}
 
 4️⃣ Now lets use the `sraster` output
 
@@ -654,7 +697,7 @@ samples <- sample_strat(sraster = sraster,
                         buff_outer = 400)
 ```
 
-## [Example 1]{.story} 🌱 Stratified sampling constrained by access {auto-animate="true"}
+## [Example]{.story} 🌱 Stratified sampling constrained by access {auto-animate="true"}
 
 5️⃣ Request 100 samples
 
@@ -672,7 +715,7 @@ samples <- sample_strat(sraster = sraster,
                         buff_outer = 400)
 ```
 
-## [Example 1]{.story} 🌱 Stratified sampling constrained by access {auto-animate="true"}
+## [Example]{.story} 🌱 Stratified sampling constrained by access {auto-animate="true"}
 
 6️⃣ Sample proportional to stratum size
 
@@ -690,7 +733,7 @@ samples <- sample_strat(sraster = sraster,
                         buff_outer = 400)
 ```
 
-## [Example 1]{.story} 🌱 Stratified sampling constrained by access {auto-animate="true"}
+## [Example]{.story} 🌱 Stratified sampling constrained by access {auto-animate="true"}
 
 7️⃣ Bring in the `access` road
 
@@ -708,7 +751,7 @@ samples <- sample_strat(sraster = sraster,
                         buff_outer = 400)
 ```
 
-## [Example 1]{.story} 🌱 Stratified sampling constrained by access {auto-animate="true"}
+## [Example]{.story} 🌱 Stratified sampling constrained by access {auto-animate="true"}
 
 8️⃣ Specify we don't want samples within 50 m of `access`
 
@@ -726,7 +769,7 @@ samples <- sample_strat(sraster = sraster,
                         buff_outer = 400)
 ```
 
-## [Example 1]{.story} 🌱 Stratified sampling constrained by access {auto-animate="true"}
+## [Example]{.story} 🌱 Stratified sampling constrained by access {auto-animate="true"}
 
 9️⃣ Or further than 400 m from `access`
 
@@ -744,7 +787,7 @@ samples <- sample_strat(sraster = sraster,
                         buff_outer = 400)
 ```
 
-## [Example 1]{.story} 🌱 Stratified sampling constrained by access {.smaller}
+## [Example]{.story} 🌱 Stratified sampling constrained by access {.smaller}
 
 ![](images/example1.png){fig-align="center"}
 
@@ -758,7 +801,7 @@ samples <- sample_strat(sraster = sraster,
 </ul>
 :::
 
-## [Example 1]{.story} 🌱 Comparing distributions
+## [Example]{.story} 🌱 Comparing distributions
 
 ![](images/accesscompare.png){fig-align="center"}
 
@@ -772,7 +815,7 @@ samples <- sample_strat(sraster = sraster,
 </ul>
 :::
 
-# [Example 2]{.story} 🌿 [Augmenting an `existing` sample]{style="float:right;text-align:right;"} {background-color="#356734"}
+<!-- # [Example 2]{.story} 🌿 [Augmenting an `existing` sample]{style="float:right;text-align:right;"} {background-color="#356734"}
 
 ## 🌿 Augmenting an `existing` sample {background-color="#356734"}
 
@@ -908,38 +951,35 @@ sample_ahels(mraster = mr,
 <li><i class="fa-brands fa-github"></i>We see that metric and sample density become quite even - structurally representative</li>
 
 </ul>
-:::
+::: -->
 
 ## Summary <img src="images/logo.png" height="120px" style="vertical-align:middle;"/>
 
-::: {.fragment .fade-in}
--   Structurally guided sampling methods show promise for *model-based* sampling
+Structurally guided sampling methods show promise for:
+
+-   Enhancing efficiency
+
+-   Reducing financial and logistical constraints
+
+-   Leveraging RS data *a-priori*
+
+-   Data-driven, objective, structurally driven inventories
+
+::: callout-tip
+# Use Cases
+
+Many more simple (and complex) examples of how `sgsR` can be used. I'm keen to hear if this software could benefit you!
 :::
 
-::: {.fragment .fade-in}
--   The **`sgsR`** package provides many methods to implement SGS approaches
-:::
 
-::: {.fragment .fade-in}
--   We presented a few examples of **`sgsR`** functionality
-:::
-
-::: {.fragment .fade-in}
--   If interested - come and talk to me & use the link on the slides more info!
-:::
-
-# [🤲🤝🙏 Thank you!]{style="float:center;text-align:center;"} {background-color="#356734"}
-
-<center>Special thanks to the *Canadian Wood Fibre Centre* for funding this research!</center>
-
-## 🤲🤝🙏 Thank you!
+# 🤲🤝🙏 Collaborators
 
 <center>***🐤 [\@GoodbodyT](https://twitter.com/GoodbodyT) 🐤 [\@IRSS_UBC](https://twitter.com/IRSS_UBC)***</center>
 
 <center>
 
 ::: info-box
-***Special thanks to my collaborators***
+***Special thanks to my `sgsR` collaborators***
 
 ::: columns
 ::: {.column width="30%"}
@@ -966,10 +1006,40 @@ sample_ahels(mraster = mr,
 
 </center>
 
-## 🤲🤝🙏 Thank you!
+# 😊🏁 Final Thoughts {background-image="images/forest2.jpg" background-opacity="15%"}
 
-![](images/affiliations.png) \## Additional resources
+::: columns
+::: column
+**What you can expect from me:**
 
-This presentation was made with [Quarto](https://quarto.org/) and will be made available on Github following the presentation at ForestSAT\
+1. Professional
+2. Pro-active
+3. Light-hearted
+4. Eager to learn
+5. High-quality outputs at pace
+:::
+
+::: column
+**My Expectations:**
+
+1. Collaboration
+2. Professional development & mentorship
+3. Effective communication
+4. Inclusive (and fun!) atmosphere
+5. Mission / strategically oriented
+:::
+:::
+
+# [🤲🤝🙏 Thank you!]{style="float:center;text-align:center;"} {background-color="#356734"}
+
+<center> I welcome and encourage any questions! </center>
+
+![](images/affiliations.png){fig-align="center"}
+
+<center>Special thanks to the *Canadian Wood Fibre Centre* for funding `sgsR` research!</center>
+
+## Additional resources
+
+This presentation was made with [Quarto](https://quarto.org/)
 
 ![](images/logo.png){fig-align="center" width="182"}
