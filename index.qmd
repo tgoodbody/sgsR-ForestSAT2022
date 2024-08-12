@@ -165,7 +165,7 @@ https://maps.app.goo.gl/ibA2voXQf6fZKUgf9
 https://www.tandfonline.com/doi/abs/10.1080/01431161.2017.1402387
 :::
 
-## Post-Doctoral Research
+## Post-Doctoral Research {.smaller}
 
 ::: columns
 ::: {.column width="50%"}
